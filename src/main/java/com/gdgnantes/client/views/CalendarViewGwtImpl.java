@@ -3,6 +3,7 @@
  */
 package com.gdgnantes.client.views;
 
+import com.gdgnantes.client.cst.ConstantsUtil;
 import com.google.gwt.dom.client.Style.Unit;
 import com.google.gwt.event.logical.shared.HasSelectionHandlers;
 import com.google.gwt.user.client.ui.HTML;
@@ -21,22 +22,6 @@ import com.googlecode.mgwt.ui.client.widget.ScrollPanel;
  * 
  */
 public class CalendarViewGwtImpl implements CalendarView {
-
-	private static String SALLE_1 = "Android";
-	private static String SALLE_2 = "Web";
-	private static String SALLE_3 = "Cloud & APIs";
-	private static String SALLE_4 = "CodeLab";
-
-	private static String HUIT_A_NEUF = "08h30 - 09h00";
-	private static String NEUF_A_DIX = "09h00 - 10h00";
-	private static String DIX_A_ONZE = "10h10 - 11h10";
-	private static String ONZE_A_DOUZE = "11h20 - 12h20";
-	private static String DOUZE_A_TREIZE = "12h30 - 13h30";
-	private static String TREIZE_A_QUATORZE = "13h30 - 14h30";
-	private static String QUATORZE_A_QUINZE = "14h40 - 15h40";
-	private static String QUINZE_A_SEIZE = "15h40 - 16h00";
-	private static String SEIZE_A_DIX_SEPT = "16h00 - 17h00";
-	private static String DIX_SEPT_A_DIX_HUIT = "17h10 - 18h00";
 
 	private LayoutPanel main;
 	private HeaderPanel headerPanel;
@@ -66,67 +51,116 @@ public class CalendarViewGwtImpl implements CalendarView {
 
 	}
 
+	/**
+	 * Create carousel page for room 1 (Android)
+	 * 
+	 * @param carousel
+	 */
 	private void createCarouselSalle1(Carousel carousel) {
 		createCarouselSalle(carousel,//
-				SALLE_1,//
-				"Ouverture des portes et accueil des participants Café / Croissants",//
-				"Key-note, présentation des conférences, codelab de la journée, des sponsors... ",//
-				"Sécurité Android",//
-				"Android & NFC",//
-				"Repas du midi offert sur place ",//
-				"Google TV",//
-				"TBD",//
-				"Pause",//
-				"Présentation de RoboSpice",//
-				"Pitch Sessions /  Démos / Discussions libres");
+				ConstantsUtil.CALENDAR_SALLE_1,//
+				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_1,//
+				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_2,//
+				ConstantsUtil.CALENDAR_SALLE_1_ACTIVITY_1,//
+				ConstantsUtil.CALENDAR_SALLE_1_ACTIVITY_2,//
+				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_3,//
+				ConstantsUtil.CALENDAR_SALLE_1_ACTIVITY_3,//
+				ConstantsUtil.CALENDAR_SALLE_1_ACTIVITY_4,//
+				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_4,//
+				ConstantsUtil.CALENDAR_SALLE_1_ACTIVITY_5,//
+				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_5);
 	}
 
+	/**
+	 * Create carousel page for room 2 (Web)
+	 * 
+	 * @param carousel
+	 */
 	private void createCarouselSalle2(Carousel carousel2) {
 		createCarouselSalle(carousel2,//
-				SALLE_2,//
-				"Ouverture des portes et accueil des participants Café / Croissants",//
-				"Key-note, présentation des conférences, codelab de la journée, des sponsors... ",//
-				"Big Data & HTML5",//
-				"GWT Offline & HTML5",//
-				"Repas du midi offert sur place ",//
-				"Angular JS",//
-				"HTML5 Offline",//
-				"Pause",//
-				"Dart",//
-				"Pitch Sessions /  Démos / Discussions libres");
+				ConstantsUtil.CALENDAR_SALLE_2,//
+				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_1,//
+				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_2,//
+				ConstantsUtil.CALENDAR_SALLE_2_ACTIVITY_1,//
+				ConstantsUtil.CALENDAR_SALLE_2_ACTIVITY_2,//
+				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_3,//
+				ConstantsUtil.CALENDAR_SALLE_2_ACTIVITY_3,//
+				ConstantsUtil.CALENDAR_SALLE_2_ACTIVITY_4,//
+				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_4,//
+				ConstantsUtil.CALENDAR_SALLE_2_ACTIVITY_5,//
+				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_5);
 	}
 
+	/**
+	 * Create carousel page for room 3 (Cloud & APIs)
+	 * 
+	 * @param carousel
+	 */
 	private void createCarouselSalle3(Carousel carousel2) {
 		createCarouselSalle(carousel2,//
-				SALLE_3,//
-				"Ouverture des portes et accueil des participants Café / Croissants",//
-				"Key-note, présentation des conférences, codelab de la journée, des sponsors... ",//
-				"Google Cloud EndPoints",//
-				"Chrome Extensions & OAuth2",//
-				"Repas du midi offert sur place ",//
-				"Drive SDK",//
-				"AppEngine",//
-				"Pause",//
-				"TBD",//
-				"Pitch Sessions /  Démos / Discussions libres");
+				ConstantsUtil.CALENDAR_SALLE_3,//
+				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_1,//
+				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_2,//
+				ConstantsUtil.CALENDAR_SALLE_3_ACTIVITY_1,//
+				ConstantsUtil.CALENDAR_SALLE_3_ACTIVITY_2,//
+				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_3,//
+				ConstantsUtil.CALENDAR_SALLE_3_ACTIVITY_3,//
+				ConstantsUtil.CALENDAR_SALLE_3_ACTIVITY_4,//
+				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_4,//
+				ConstantsUtil.CALENDAR_SALLE_3_ACTIVITY_5,//
+				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_5);
 	}
 
+	/**
+	 * Create carousel page for room 4 (CodeLab )
+	 * 
+	 * @param carousel
+	 */
 	private void createCarouselSalle4(Carousel carousel2) {
 		createCarouselSalle(carousel2,//
-				SALLE_4,//
-				"Ouverture des portes et accueil des participants Café / Croissants",//
-				"Key-note, présentation des conférences, codelab de la journée, des sponsors... ",//
-				"Le président est ... (Atelier AppEngine)",//
-				"Le président est ... (Atelier AppEngine)",//
-				"Repas du midi offert sur place ",//
-				"Android BootStrap",//
-				"Android BootStrap",//
-				"Pause",//
-				"Présentation BeMyApp",//
-				"Présentation BeMyApp");
+				ConstantsUtil.CALENDAR_SALLE_4,//
+				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_1,//
+				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_2,//
+				ConstantsUtil.CALENDAR_SALLE_4_ACTIVITY_1,//
+				ConstantsUtil.CALENDAR_SALLE_4_ACTIVITY_1,//
+				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_3,//
+				ConstantsUtil.CALENDAR_SALLE_4_ACTIVITY_2,//
+				ConstantsUtil.CALENDAR_SALLE_4_ACTIVITY_2,//
+				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_4,//
+				ConstantsUtil.CALENDAR_SALLE_4_ACTIVITY_3,//
+				ConstantsUtil.CALENDAR_SALLE_4_ACTIVITY_3);
 	}
 
-	private void createCarouselSalle(Carousel carousel, //
+	/**
+	 * Create one page for carousel (for a room)
+	 * 
+	 * @param carousel
+	 *            : Carousel to complete with this new page
+	 * @param roomName
+	 *            : Room name
+	 * @param huit
+	 *            : 8-9h activity
+	 * @param neuf
+	 *            : 9-10h activity
+	 * @param dix
+	 *            : 10-11h activity
+	 * @param onze
+	 *            : 11-12h activity
+	 * @param douze
+	 *            : 12-13h activity
+	 * @param treize
+	 *            : 13-14h activity
+	 * @param quatorze
+	 *            : 14-15h activity
+	 * @param quinze
+	 *            : 15-16h activity
+	 * @param seize
+	 *            : 16-17h activity
+	 * @param dixsept
+	 *            : 17-18h activity
+	 */
+	private void createCarouselSalle( //
+			Carousel carousel, //
 			String roomName, //
 			String huit, //
 			String neuf, //
@@ -138,42 +172,63 @@ public class CalendarViewGwtImpl implements CalendarView {
 			String quinze, //
 			String seize, //
 			String dixsept) {
+
+		// New page for carousel
 		ScrollPanel scrollPanel2 = new ScrollPanel();
 		scrollPanel2.setScrollingEnabledX(false);
 		// scrollPanel2.setWidth("100%");
-
 		RoundPanel flowPanel3 = new RoundPanel();
 
 		// Titre de la page du carousel
 		flowPanel3.add(createSlide(roomName));
 
 		// Agenda de la salle
-		flowPanel3.add(createSlide(HUIT_A_NEUF, huit));
-		flowPanel3.add(createSlide(NEUF_A_DIX, neuf));
-		flowPanel3.add(createSlide(DIX_A_ONZE, dix));
-		flowPanel3.add(createSlide(ONZE_A_DOUZE, onze));
-		flowPanel3.add(createSlide(DOUZE_A_TREIZE, douze));
-		flowPanel3.add(createSlide(TREIZE_A_QUATORZE, treize));
-		flowPanel3.add(createSlide(QUATORZE_A_QUINZE, quatorze));
-		flowPanel3.add(createSlide(QUINZE_A_SEIZE, quinze));
-		flowPanel3.add(createSlide(SEIZE_A_DIX_SEPT, seize));
-		flowPanel3.add(createSlide(DIX_SEPT_A_DIX_HUIT, dixsept));
+		flowPanel3.add(createSlide(ConstantsUtil.CALENDAR_HUIT_A_NEUF, huit));
+		flowPanel3.add(createSlide(ConstantsUtil.CALENDAR_NEUF_A_DIX, neuf));
+		flowPanel3.add(createSlide(ConstantsUtil.CALENDAR_DIX_A_ONZE, dix));
+		flowPanel3.add(createSlide(ConstantsUtil.CALENDAR_ONZE_A_DOUZE, onze));
+		flowPanel3.add(createSlide(ConstantsUtil.CALENDAR_DOUZE_A_TREIZE, douze));
+		flowPanel3.add(createSlide(ConstantsUtil.CALENDAR_TREIZE_A_QUATORZE, treize));
+		flowPanel3.add(createSlide(ConstantsUtil.CALENDAR_QUATORZE_A_QUINZE, quatorze));
+		flowPanel3.add(createSlide(ConstantsUtil.CALENDAR_QUINZE_A_SEIZE, quinze));
+		flowPanel3.add(createSlide(ConstantsUtil.CALENDAR_SEIZE_A_DIX_SEPT, seize));
+		flowPanel3.add(createSlide(ConstantsUtil.CALENDAR_DIX_SEPT_A_DIX_HUIT, dixsept));
 
 		scrollPanel2.setWidget(flowPanel3);
 
+		// Add page to carousel
 		carousel.add(scrollPanel2);
 	}
 
+	/**
+	 * Create one slide for carousel page
+	 * 
+	 * @param dateHour
+	 * @param textForSlide
+	 * @return
+	 */
 	private HTML createSlide(String dateHour, String textForSlide) {
 		HTML html = new HTML(dateHour + " : " + textForSlide);
 		return applyStyleForSlide(html);
 	}
 
+	/**
+	 * Create one slide for carousel page
+	 * 
+	 * @param textForSlide
+	 * @return
+	 */
 	private HTML createSlide(String textForSlide) {
 		HTML html = new HTML(textForSlide);
 		return applyStyleForSlide(html);
 	}
 
+	/**
+	 * Apply style for carousel slide
+	 * 
+	 * @param slideWithoutStyle
+	 * @return
+	 */
 	private HTML applyStyleForSlide(HTML slideWithoutStyle) {
 		slideWithoutStyle.getElement().getStyle().setMarginBottom(30, Unit.PX);
 		return slideWithoutStyle;
@@ -200,11 +255,6 @@ public class CalendarViewGwtImpl implements CalendarView {
 		return headerBackButton;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see com.gdgnantes.client.views.CalendarView#getSwipePanel()
-	 */
 	@Override
 	public HasSelectionHandlers<Integer> getSwipePanel() {
 		return carousel;

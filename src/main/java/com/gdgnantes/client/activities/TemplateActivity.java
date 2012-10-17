@@ -18,6 +18,7 @@ import java.util.List;
 
 import com.gdgnantes.client.ClientFactory;
 import com.gdgnantes.client.activities.home.Topic;
+import com.gdgnantes.client.cst.ConstantsUtil;
 import com.gdgnantes.client.places.HomePlace;
 import com.gdgnantes.client.views.TemplateView;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
@@ -44,10 +45,10 @@ public class TemplateActivity extends MGWTAbstractActivity {
 		TemplateView view = clientFactory.getTemplateView();
 
 		// Ajout du titre principal
-		view.setTitle("DevFest");
+		view.setTitle(ConstantsUtil.HEADER_DEVFEST_2012);
 
 		// Ajout du label du bouton de retour
-		view.setBackButtonText("Retour");
+		view.setBackButtonText(ConstantsUtil.HEADER_BACK);
 
 		// Ajout du sous titre
 		view.getFirstHeader().setText("Template");
@@ -88,7 +89,7 @@ public class TemplateActivity extends MGWTAbstractActivity {
 	 */
 	private List<Topic> createTopicsList() {
 		ArrayList<Topic> list = new ArrayList<Topic>();
-		list.add(new Topic("Return", 5));
+		list.add(new Topic(ConstantsUtil.HEADER_BACK, 5));
 		return list;
 	}
 

@@ -3,13 +3,15 @@
  */
 package com.gdgnantes.client.views;
 
+import com.gdgnantes.client.cst.ConstantsUtil;
+import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.Widget;
 import com.googlecode.mgwt.dom.client.event.tap.HasTapHandlers;
 import com.googlecode.mgwt.ui.client.MGWT;
 import com.googlecode.mgwt.ui.client.widget.HeaderButton;
 import com.googlecode.mgwt.ui.client.widget.HeaderPanel;
 import com.googlecode.mgwt.ui.client.widget.LayoutPanel;
-import com.googlecode.mgwt.ui.client.widget.ScrollPanel;
+import com.googlecode.mgwt.ui.client.widget.RoundPanel;
 
 /**
  * @author majaouen
@@ -33,9 +35,18 @@ public class AboutViewGwtImpl implements AboutView {
 
 		main.add(headerPanel);
 
-		ScrollPanel scrollPanel = new ScrollPanel();
-		scrollPanel.setScrollingEnabledX(false);
-		main.add(scrollPanel);
+		// Create Main Panel
+		LayoutPanel mainScrollPanel = new LayoutPanel();
+
+		mainScrollPanel.add(new HTML(ConstantsUtil.HTML_IMG_LOGO));
+
+		RoundPanel round = new RoundPanel();
+
+		mainScrollPanel.add(round);
+
+		round.add(new HTML(ConstantsUtil.ABOUT_BODY));
+
+		main.add(mainScrollPanel);
 
 	}
 

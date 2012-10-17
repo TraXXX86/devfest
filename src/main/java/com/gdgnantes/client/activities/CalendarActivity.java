@@ -14,6 +14,7 @@
 package com.gdgnantes.client.activities;
 
 import com.gdgnantes.client.ClientFactory;
+import com.gdgnantes.client.cst.ConstantsUtil;
 import com.gdgnantes.client.places.HomePlace;
 import com.gdgnantes.client.views.CalendarView;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
@@ -38,10 +39,10 @@ public class CalendarActivity extends MGWTAbstractActivity {
 		final CalendarView view = clientFactory.getCalendarView();
 
 		// Ajout du titre principal
-		view.setTitle("DevFest");
+		view.setTitle(ConstantsUtil.HEADER_DEVFEST_2012);
 
 		// Ajout du label du bouton de retour
-		view.setBackButtonText("Retour");
+		view.setBackButtonText(ConstantsUtil.HEADER_BACK);
 
 		// Ajout de la place pour le bouton de retour
 		addHandlerRegistration(view.getBackButton().addTapHandler(new TapHandler() {

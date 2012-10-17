@@ -18,9 +18,9 @@ import java.util.List;
 
 import com.gdgnantes.client.ClientFactory;
 import com.gdgnantes.client.activities.home.Topic;
+import com.gdgnantes.client.cst.ConstantsUtil;
 import com.gdgnantes.client.places.AboutPlace;
 import com.gdgnantes.client.places.CalendarPlace;
-import com.gdgnantes.client.places.TemplatePlace;
 import com.gdgnantes.client.views.MenuListView;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.googlecode.mgwt.dom.client.event.tap.TapEvent;
@@ -45,10 +45,10 @@ public class MenuListActivity extends MGWTAbstractActivity {
 		MenuListView view = clientFactory.getHomeView();
 
 		// Ajout du titre principal
-		view.setTitle("DevFest 2012");
+		view.setTitle(ConstantsUtil.HEADER_DEVFEST_2012);
 
 		// Ajout du clic droit
-		view.setRightButtonText("A propos");
+		view.setRightButtonText(ConstantsUtil.HEADER_ABOUT);
 
 		// Ajout du sous titre
 		// view.getFirstHeader().setText("Navigation");
@@ -67,26 +67,26 @@ public class MenuListActivity extends MGWTAbstractActivity {
 					clientFactory.getPlaceController().goTo(new CalendarPlace());
 					return;
 				}
-				// Bouton 2
-				if (index == 1) {
-					clientFactory.getPlaceController().goTo(new TemplatePlace());
-					return;
-				}
-				// Bouton 3
-				if (index == 2) {
-					clientFactory.getPlaceController().goTo(new TemplatePlace());
-					return;
-				}
-				// Bouton 4
-				if (index == 3) {
-					clientFactory.getPlaceController().goTo(new TemplatePlace());
-					return;
-				}
-				// Bouton 5
-				if (index == 4) {
-					clientFactory.getPlaceController().goTo(new TemplatePlace());
-					return;
-				}
+				// // Bouton 2
+				// if (index == 1) {
+				// clientFactory.getPlaceController().goTo(new TemplatePlace());
+				// return;
+				// }
+				// // Bouton 3
+				// if (index == 2) {
+				// clientFactory.getPlaceController().goTo(new TemplatePlace());
+				// return;
+				// }
+				// // Bouton 4
+				// if (index == 3) {
+				// clientFactory.getPlaceController().goTo(new TemplatePlace());
+				// return;
+				// }
+				// // Bouton 5
+				// if (index == 4) {
+				// clientFactory.getPlaceController().goTo(new TemplatePlace());
+				// return;
+				// }
 			}
 		}));
 
@@ -109,11 +109,11 @@ public class MenuListActivity extends MGWTAbstractActivity {
 	private List<Topic> createTopicsList() {
 		ArrayList<Topic> list = new ArrayList<Topic>();
 		// list.add(new Topic("Accueil", 5));
-		list.add(new Topic("Agenda", 5));
-		list.add(new Topic("Sessions", 5));
-		list.add(new Topic("Speakers", 5));
-		list.add(new Topic("Partenaires", 5));
-		list.add(new Topic("FAQ", 5));
+		list.add(new Topic(ConstantsUtil.MENU_CALENDAR, 5));
+		list.add(new Topic(ConstantsUtil.MENU_SESSIONS, 5));
+		list.add(new Topic(ConstantsUtil.MENU_SPEAKERS, 5));
+		list.add(new Topic(ConstantsUtil.MENU_PARTNERS, 5));
+		list.add(new Topic(ConstantsUtil.MENU_FAQ, 5));
 		return list;
 	}
 

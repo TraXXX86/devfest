@@ -6,6 +6,8 @@ package com.gdgnantes.client.views;
 import java.util.List;
 
 import com.gdgnantes.client.activities.home.Topic;
+import com.gdgnantes.client.cst.ConstantsUtil;
+import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.HasText;
 import com.google.gwt.user.client.ui.Widget;
 import com.googlecode.mgwt.dom.client.event.tap.HasTapHandlers;
@@ -55,10 +57,19 @@ public class MenuListViewGwtImpl implements MenuListView {
 
 		cellList.getCellList().setRound(true);
 
+		// Create Main Panel
+		LayoutPanel mainScrollPanel = new LayoutPanel();
+
+		// Add DevFest Logo to main panel
+		mainScrollPanel.add(new HTML(ConstantsUtil.HTML_IMG_LOGO_WITH_BR));
+
+		// Create and add Menu scroll panel
 		ScrollPanel scrollPanel = new ScrollPanel();
 		scrollPanel.setWidget(cellList);
 		scrollPanel.setScrollingEnabledX(false);
-		main.add(scrollPanel);
+		mainScrollPanel.add(scrollPanel);
+
+		main.add(mainScrollPanel);
 
 	}
 
