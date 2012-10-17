@@ -25,7 +25,7 @@ public class ConstantsUtil {
 	// ################################################################
 	// ############################ About constants
 	// ################################################################
-	public static final String ABOUT_BODY = "<br> <center>DevFest 2012</center> <br><br>";
+	public static final String ABOUT_BODY = "<br/> <center>Site du DevFest Nantes 2012</center> <br/><a target='_blank' href='http://devfest.gdgnantes.com'>http://devfest.gdgnantes.com</a><br/><br/><center>Site du GDG Nantes</center><br/><a target='_blank' href='http://www.gdgnantes.com/'>http://www.gdgnantes.com/</a><br/><br/>";
 
 	// ################################################################
 	// ############################ Menu constants
