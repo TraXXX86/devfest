@@ -18,6 +18,7 @@ package com.gdgnantes.client;
 import com.gdgnantes.client.views.AboutView;
 import com.gdgnantes.client.views.CalendarView;
 import com.gdgnantes.client.views.MenuListView;
+import com.gdgnantes.client.views.SpeakersView;
 import com.gdgnantes.client.views.TemplateView;
 import com.google.gwt.place.shared.PlaceController;
 import com.google.web.bindery.event.shared.EventBus;
@@ -47,5 +48,10 @@ public interface ClientFactory {
 	 * @return
 	 */
 	public AboutView getAboutView();
+
+	/**
+	 * @return
+	 */
+	public SpeakersView getSpeakersView();
 
 }

@@ -39,6 +39,7 @@ public class ConstantsUtil {
 	// ################################################################
 	// ############################ Calendar constants
 	// ################################################################
+	public static final String CALENDAR_SALLE = "Salle : ";
 	public static final String CALENDAR_SALLE_1 = "Android";
 	public static final String CALENDAR_SALLE_2 = "Web";
 	public static final String CALENDAR_SALLE_3 = "Cloud & APIs";
@@ -82,5 +83,35 @@ public class ConstantsUtil {
 	public static final String CALENDAR_SALLE_4_ACTIVITY_1 = "Le président est ... (Atelier AppEngine)";
 	public static final String CALENDAR_SALLE_4_ACTIVITY_2 = "Android BootStrap";
 	public static final String CALENDAR_SALLE_4_ACTIVITY_3 = "Présentation BeMyApp";
+
+	// ################################################################
+	// ############################ Speakers constants
+	// ################################################################
+
+	public static final String SPEAKER_1 = "<div style=\"display:inline;float:left;margin:5px 10px 0px 0px\"><a href=\"";
+	// Add here GGPLUS
+	public static final String SPEAKER_2 = "\" imageanchor=\"1\" target=\"_blank\"><img alt=\"";
+	// Add here SpeakerName
+	public static final String SPEAKER_3 = "\" border=\"0\" height=\"75\"  width=\"75\" src=\"";
+	// Add here SpeakerImg
+	public static final String SPEAKER_4 = "\" /></a></div><a href=\"";
+	// Add here GGPLUS
+	public static final String SPEAKER_5 = "\" target=\"_blank\"><b>";
+	// Add here SpeakerName
+	public static final String SPEAKER_6 = "</b></a>";
+	// Add here SpeakerDescription
+	public static final String SPEAKER_7 = "<br /></div><div>";
+
+	public static final String SPEAKER_NGR_NAME = "Nicolas Garnier";
+	public static final String SPEAKER_NGR_GGPLUS = "https://plus.google.com/108635752367054807758";
+	public static final String SPEAKER_NGR_IMG = "http://devfest.gdgnantes.com/_/rsrc/1348310811524/speakers/nicolasgarnier2.png";
+	public static final String SPEAKER_NGR_DESCRIPTION = " est \"Developper Advocate\" chez Google. " //
+			+ "<div>Il est diplômé de l'INSA de Rennes en 2005, a travaillé pour Airbus et le CNES entre 2005 et 2008.Il a rejoint Google en 2008.<br />" //
+			+ "Il travaille sur Google Apps, Google Calendar, Google Contacts et OAuth2.<br />";
+
+	public static final String SPEAKER_PPS_NAME = "Philippe Prados";
+	public static final String SPEAKER_PPS_GGPLUS = "https://plus.google.com/u/0/113096673936414639590/about";
+	public static final String SPEAKER_PPS_IMG = "https://lh4.googleusercontent.com/-04gkwn5TwTA/AAAAAAAAAAI/AAAAAAAAAB8/EKO6S9cErJE/s250-c-k/photo.jpg";
+	public static final String SPEAKER_PPS_DESCRIPTION = " est Architecte Smart Mobility et est auteur de plusieurs livres sur C et Java,  de nombreux articles (plus de 120) dont 50% du <a href=\"http://diamond.izibookstore.com/produit?internal_reference=lmhs61\">dernier Hors Série de GNU Linux Mag</a> dédié à Android. Il s’est basé sur les articles de ce dernier numéro pour nous présenter le « Développement sécurisé Android ».</div><div><br />";
 
 }

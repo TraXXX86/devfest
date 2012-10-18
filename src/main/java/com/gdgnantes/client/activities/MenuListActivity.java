@@ -21,6 +21,7 @@ import com.gdgnantes.client.activities.home.Topic;
 import com.gdgnantes.client.cst.ConstantsUtil;
 import com.gdgnantes.client.places.AboutPlace;
 import com.gdgnantes.client.places.CalendarPlace;
+import com.gdgnantes.client.places.SpeakersPlace;
 import com.gdgnantes.client.views.MenuListView;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.googlecode.mgwt.dom.client.event.tap.TapEvent;
@@ -72,11 +73,11 @@ public class MenuListActivity extends MGWTAbstractActivity {
 				// clientFactory.getPlaceController().goTo(new TemplatePlace());
 				// return;
 				// }
-				// // Bouton 3
-				// if (index == 2) {
-				// clientFactory.getPlaceController().goTo(new TemplatePlace());
-				// return;
-				// }
+				// Bouton 3 : Speakers
+				if (index == 2) {
+					clientFactory.getPlaceController().goTo(new SpeakersPlace());
+					return;
+				}
 				// // Bouton 4
 				// if (index == 3) {
 				// clientFactory.getPlaceController().goTo(new TemplatePlace());

@@ -21,6 +21,8 @@ import com.gdgnantes.client.views.CalendarView;
 import com.gdgnantes.client.views.CalendarViewGwtImpl;
 import com.gdgnantes.client.views.MenuListView;
 import com.gdgnantes.client.views.MenuListViewGwtImpl;
+import com.gdgnantes.client.views.SpeakersView;
+import com.gdgnantes.client.views.SpeakersViewGwtImpl;
 import com.gdgnantes.client.views.TemplateView;
 import com.gdgnantes.client.views.TemplateViewGwtImpl;
 import com.google.gwt.place.shared.PlaceController;
@@ -39,6 +41,7 @@ public class ClientFactoryImpl implements ClientFactory {
 	private CalendarView calendarViewImpl;
 	private TemplateView templateViewImpl;
 	private AboutViewGwtImpl aboutViewImpl;
+	private SpeakersViewGwtImpl speakersViewImpl;
 
 	public ClientFactoryImpl() {
 		eventBus = new SimpleEventBus();
@@ -107,6 +110,19 @@ public class ClientFactoryImpl implements ClientFactory {
 			aboutViewImpl = new AboutViewGwtImpl();
 		}
 		return aboutViewImpl;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see com.gdgnantes.client.ClientFactory#getSpeakersView()
+	 */
+	@Override
+	public SpeakersView getSpeakersView() {
+		if (speakersViewImpl == null) {
+			speakersViewImpl = new SpeakersViewGwtImpl();
+		}
+		return speakersViewImpl;
 	}
 
 }

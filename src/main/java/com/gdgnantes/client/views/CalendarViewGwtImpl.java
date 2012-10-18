@@ -180,7 +180,7 @@ public class CalendarViewGwtImpl implements CalendarView {
 		RoundPanel flowPanel3 = new RoundPanel();
 
 		// Titre de la page du carousel
-		flowPanel3.add(createSlide(roomName));
+		flowPanel3.add(createSlide(ConstantsUtil.CALENDAR_SALLE + roomName));
 
 		// Agenda de la salle
 		flowPanel3.add(createSlide(ConstantsUtil.CALENDAR_HUIT_A_NEUF, huit));

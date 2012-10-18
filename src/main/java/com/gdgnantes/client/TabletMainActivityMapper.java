@@ -3,10 +3,12 @@ package com.gdgnantes.client;
 import com.gdgnantes.client.activities.AboutActivity;
 import com.gdgnantes.client.activities.CalendarActivity;
 import com.gdgnantes.client.activities.MenuListActivity;
+import com.gdgnantes.client.activities.SpeakersActivity;
 import com.gdgnantes.client.activities.TemplateActivity;
 import com.gdgnantes.client.places.AboutPlace;
 import com.gdgnantes.client.places.CalendarPlace;
 import com.gdgnantes.client.places.HomePlace;
+import com.gdgnantes.client.places.SpeakersPlace;
 import com.google.gwt.activity.shared.Activity;
 import com.google.gwt.activity.shared.ActivityMapper;
 import com.google.gwt.place.shared.Place;
@@ -30,6 +32,9 @@ public class TabletMainActivityMapper implements ActivityMapper {
 		}
 		if (place instanceof AboutPlace) {
 			return new AboutActivity(clientFactory);
+		}
+		if (place instanceof SpeakersPlace) {
+			return new SpeakersActivity(clientFactory);
 		}
 		return new TemplateActivity(clientFactory);
 	}
