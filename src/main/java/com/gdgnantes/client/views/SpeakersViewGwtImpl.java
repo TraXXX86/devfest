@@ -23,6 +23,7 @@ public class SpeakersViewGwtImpl implements SpeakersView {
 	private HeaderPanel headerPanel;
 	private HeaderButton headerBackButton;
 	private LayoutPanel mainForScrollPanel;
+	private boolean isInit = false;
 
 	public SpeakersViewGwtImpl() {
 		main = new LayoutPanel();
@@ -71,6 +72,16 @@ public class SpeakersViewGwtImpl implements SpeakersView {
 	@Override
 	public HasTapHandlers getBackButton() {
 		return headerBackButton;
+	}
+
+	@Override
+	public boolean isInit() {
+		return isInit;
+	}
+
+	@Override
+	public void setInit(boolean b) {
+		isInit = b;
 	}
 
 }

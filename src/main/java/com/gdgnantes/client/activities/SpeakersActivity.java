@@ -34,6 +34,8 @@ public class SpeakersActivity extends MGWTAbstractActivity {
 		this.clientFactory = clientFactory;
 	}
 
+	private boolean isInit = false;
+
 	@Override
 	public void start(AcceptsOneWidget panel, com.google.gwt.event.shared.EventBus eventBus) {
 		SpeakersView view = clientFactory.getSpeakersView();
@@ -53,17 +55,20 @@ public class SpeakersActivity extends MGWTAbstractActivity {
 			}
 		}));
 
-		view.addSpeakerDescription(createSpeakerDescription(//
-				ConstantsUtil.SPEAKER_NGR_NAME, //
-				ConstantsUtil.SPEAKER_NGR_DESCRIPTION, //
-				ConstantsUtil.SPEAKER_NGR_GGPLUS, //
-				ConstantsUtil.SPEAKER_NGR_IMG));
+		if (!view.isInit()) {
+			view.addSpeakerDescription(createSpeakerDescription(//
+					ConstantsUtil.SPEAKER_NGR_NAME, //
+					ConstantsUtil.SPEAKER_NGR_DESCRIPTION, //
+					ConstantsUtil.SPEAKER_NGR_GGPLUS, //
+					ConstantsUtil.SPEAKER_NGR_IMG));
 
-		view.addSpeakerDescription(createSpeakerDescription(//
-				ConstantsUtil.SPEAKER_PPS_NAME, //
-				ConstantsUtil.SPEAKER_PPS_DESCRIPTION, //
-				ConstantsUtil.SPEAKER_PPS_GGPLUS, //
-				ConstantsUtil.SPEAKER_PPS_IMG));
+			view.addSpeakerDescription(createSpeakerDescription(//
+					ConstantsUtil.SPEAKER_PPS_NAME, //
+					ConstantsUtil.SPEAKER_PPS_DESCRIPTION, //
+					ConstantsUtil.SPEAKER_PPS_GGPLUS, //
+					ConstantsUtil.SPEAKER_PPS_IMG));
+			view.setInit(true);
+		}
 
 		panel.setWidget(view);
 	}

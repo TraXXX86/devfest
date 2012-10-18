@@ -41,4 +41,14 @@ public interface SpeakersView extends IsWidget {
 	 */
 	void addSpeakerDescription(String description);
 
+	/**
+	 * @return
+	 */
+	public boolean isInit();
+
+	/**
+	 * @param b
+	 */
+	public void setInit(boolean b);
+
 }
