@@ -12,10 +12,12 @@
 	<!--<inherits name="com.googlecode.gwtphonegap.PhoneGap"/>-->
 	
 	<!-- set the user agent to safari -> only webkit -->
- 	<set-property name="user.agent" value="safari" />
+	<!--  <set-property name="user.agent" value="safari" /> -->
+	<!-- <extend-property name="user.agent" values="gecko1_8" /> -->
  	
 	<!--  here you can set mgwt.os to a specific platform -->
-<!-- 	<set-property name="mgwt.os" value="android" /> -->
+<!-- 	<set-property name="mgwt.os" value="android_tablet, android" /> -->
+<!-- 	<extend-property name="mgwt.os" values="iphone" /> -->
 	
 	<!-- here you can turn off css obfuscation -->
 	<!--<set-configuration-property name="mgwt.css" value="pretty" /> -->

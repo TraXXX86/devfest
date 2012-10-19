@@ -12,8 +12,8 @@ public class ConstantsUtil {
 	// ################################################################
 	// ############################ HTML constants
 	// ################################################################
-	public static final String HTML_IMG_LOGO = "<center><img src=\"./devfest/devFestLogo.gif\"/></center>";
-	public static final String HTML_IMG_LOGO_WITH_BR = "<center><br><img src=\"./devfest/devFestLogo.gif\"/></center>";
+	public static final String HTML_IMG_LOGO = "<center><img src=\"./images/devFestLogo.gif\"/></center>";
+	public static final String HTML_IMG_LOGO_WITH_BR = "<center><br><img src=\"./images/devFestLogo.gif\"/></center>";
 
 	// ################################################################
 	// ############################ Header constants
@@ -112,6 +112,6 @@ public class ConstantsUtil {
 	public static final String SPEAKER_PPS_NAME = "Philippe Prados";
 	public static final String SPEAKER_PPS_GGPLUS = "https://plus.google.com/u/0/113096673936414639590/about";
 	public static final String SPEAKER_PPS_IMG = "https://lh4.googleusercontent.com/-04gkwn5TwTA/AAAAAAAAAAI/AAAAAAAAAB8/EKO6S9cErJE/s250-c-k/photo.jpg";
-	public static final String SPEAKER_PPS_DESCRIPTION = " est Architecte Smart Mobility et est auteur de plusieurs livres sur C et Java,  de nombreux articles (plus de 120) dont 50% du <a href=\"http://diamond.izibookstore.com/produit?internal_reference=lmhs61\">dernier Hors Série de GNU Linux Mag</a> dédié à Android. Il s’est basé sur les articles de ce dernier numéro pour nous présenter le « Développement sécurisé Android ».</div><div><br />";
+	public static final String SPEAKER_PPS_DESCRIPTION = " est Architecte Smart Mobility et est auteur de plusieurs livres sur C et Java,  de nombreux articles (plus de 120) dont 50% du <a href=\"http://diamond.izibookstore.com/produit?internal_reference=lmhs61\">dernier Hors Série de GNU Linux Mag</a> dédié à Android. Il s’est basé sur les articles de ce dernier numéro pour nous présenter le « Développement sécurisé Android ».<br />";
 
 }

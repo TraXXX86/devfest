@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/assembly"/>
 	<classpathentry kind="var" path="M2_REPO/commons-io/commons-io/2.0.1/commons-io-2.0.1.jar" sourcepath="M2_REPO/commons-io/commons-io/2.0.1/commons-io-2.0.1-sources.jar">
 		<attributes>
 			<attribute name="javadoc_location" value="jar:file:/D:/Service/Profiles/majaouen/.m2/repository/commons-io/commons-io/2.0.1/commons-io-2.0.1-javadoc.jar!/"/>
@@ -11,5 +12,6 @@
 	<classpathentry kind="var" path="M2_REPO/com/googlecode/mgwt/mgwt/1.1.1/mgwt-1.1.1.jar" sourcepath="M2_REPO/com/googlecode/mgwt/mgwt/1.1.1/mgwt-1.1.1-sources.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER/GWT"/>
+	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER/App Engine"/>
 	<classpathentry kind="output" path="target/devfest-1.0-SNAPSHOT/WEB-INF/classes"/>
 </classpath>

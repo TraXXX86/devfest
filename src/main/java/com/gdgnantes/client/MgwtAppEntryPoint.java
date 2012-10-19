@@ -30,6 +30,7 @@ import com.googlecode.mgwt.mvp.client.AnimatableDisplay;
 import com.googlecode.mgwt.mvp.client.AnimatingActivityManager;
 import com.googlecode.mgwt.mvp.client.AnimationMapper;
 import com.googlecode.mgwt.ui.client.MGWT;
+import com.googlecode.mgwt.ui.client.MGWTSettings;
 import com.googlecode.mgwt.ui.client.dialog.TabletPortraitOverlay;
 import com.googlecode.mgwt.ui.client.layout.MasterRegionHandler;
 import com.googlecode.mgwt.ui.client.layout.OrientationRegionHandler;
@@ -42,23 +43,8 @@ public class MgwtAppEntryPoint implements EntryPoint {
 
 	private void start() {
 
-		// // SuperDevModeUtil.showDevMode();
-		//
-		// ViewPort viewPort = new MGWTSettings.ViewPort();
-		// viewPort.setTargetDensity(DENSITY.MEDIUM);
-		// viewPort.setUserScaleAble(false).setMinimumScale(1.0).setMinimumScale(1.0).setMaximumScale(1.0);
-		//
-		// MGWTSettings settings = new MGWTSettings();
-		// settings.setViewPort(viewPort);
-		// settings.setIconUrl("logo.png");
-		// settings.setAddGlosToIcon(true);
-		// settings.setFullscreen(true);
-		// settings.setPreventScrolling(true);
-		//
-		// MGWT.applySettings(settings);
-
 		// set viewport and other settings for mobile
-		// MGWT.applySettings(MGWTSettings.getAppSetting());
+		MGWT.applySettings(MGWTSettings.getAppSetting());
 
 		final ClientFactoryImpl clientFactory = new ClientFactoryImpl();
 
