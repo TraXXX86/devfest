@@ -15,9 +15,12 @@ package com.gdgnantes.client.activities;
 
 import com.gdgnantes.client.ClientFactory;
 import com.gdgnantes.client.cst.ConstantsUtil;
+import com.gdgnantes.client.cst.img.ImgBundle;
 import com.gdgnantes.client.places.HomePlace;
 import com.gdgnantes.client.views.SpeakersView;
+import com.google.gwt.resources.client.ImageResource;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
+import com.google.gwt.user.client.ui.Image;
 import com.googlecode.mgwt.dom.client.event.tap.TapEvent;
 import com.googlecode.mgwt.dom.client.event.tap.TapHandler;
 import com.googlecode.mgwt.mvp.client.MGWTAbstractActivity;
@@ -37,7 +40,8 @@ public class SpeakersActivity extends MGWTAbstractActivity {
 	private boolean isInit = false;
 
 	@Override
-	public void start(AcceptsOneWidget panel, com.google.gwt.event.shared.EventBus eventBus) {
+	public void start(AcceptsOneWidget panel,
+			com.google.gwt.event.shared.EventBus eventBus) {
 		SpeakersView view = clientFactory.getSpeakersView();
 
 		// Ajout du titre principal
@@ -47,40 +51,149 @@ public class SpeakersActivity extends MGWTAbstractActivity {
 		view.setBackButtonText(ConstantsUtil.HEADER_BACK);
 
 		// Ajout de la place pour le bouton de retour
-		addHandlerRegistration(view.getBackButton().addTapHandler(new TapHandler() {
-			@Override
-			public void onTap(TapEvent event) {
-				clientFactory.getPlaceController().goTo(new HomePlace());
-				return;
-			}
-		}));
+		addHandlerRegistration(view.getBackButton().addTapHandler(
+				new TapHandler() {
+					@Override
+					public void onTap(TapEvent event) {
+						clientFactory.getPlaceController()
+								.goTo(new HomePlace());
+						return;
+					}
+				}));
 
 		if (!view.isInit()) {
 			view.addSpeakerDescription(createSpeakerDescription(//
 					ConstantsUtil.SPEAKER_NGR_NAME, //
 					ConstantsUtil.SPEAKER_NGR_DESCRIPTION, //
 					ConstantsUtil.SPEAKER_NGR_GGPLUS, //
-					ConstantsUtil.SPEAKER_NGR_IMG));
+					ImgBundle.INSTANCE.ngr()));
 
 			view.addSpeakerDescription(createSpeakerDescription(//
 					ConstantsUtil.SPEAKER_PPS_NAME, //
 					ConstantsUtil.SPEAKER_PPS_DESCRIPTION, //
 					ConstantsUtil.SPEAKER_PPS_GGPLUS, //
-					ConstantsUtil.SPEAKER_PPS_IMG));
+					ImgBundle.INSTANCE.pps()));
+
+			view.addSpeakerDescription(createSpeakerDescription(//
+					ConstantsUtil.SPEAKER_JFG_NAME, //
+					ConstantsUtil.SPEAKER_JFG_DESCRIPTION, //
+					ConstantsUtil.SPEAKER_JFG_GGPLUS, //
+					ImgBundle.INSTANCE.jfg()));
+
+			view.addSpeakerDescription(createSpeakerDescription(//
+					ConstantsUtil.SPEAKER_LCS_NAME, //
+					ConstantsUtil.SPEAKER_LCS_DESCRIPTION, //
+					ConstantsUtil.SPEAKER_LCS_GGPLUS, //
+					ImgBundle.INSTANCE.lcs()));
+
+			view.addSpeakerDescription(createSpeakerDescription(//
+					ConstantsUtil.SPEAKER_SNS_NAME, //
+					ConstantsUtil.SPEAKER_SNS_DESCRIPTION, //
+					ConstantsUtil.SPEAKER_SNS_GGPLUS, //
+					ImgBundle.INSTANCE.sns()));
+
+			view.addSpeakerDescription(createSpeakerDescription(//
+					ConstantsUtil.SPEAKER_GGD_NAME, //
+					ConstantsUtil.SPEAKER_GGD_DESCRIPTION, //
+					ConstantsUtil.SPEAKER_GGD_GGPLUS, //
+					ImgBundle.INSTANCE.ggd()));
+
+			view.addSpeakerDescription(createSpeakerDescription(//
+					ConstantsUtil.SPEAKER_IGN_NAME, //
+					ConstantsUtil.SPEAKER_IGN_DESCRIPTION, //
+					ConstantsUtil.SPEAKER_IGN_GGPLUS, //
+					ImgBundle.INSTANCE.ign()));
+
+			view.addSpeakerDescription(createSpeakerDescription(//
+					ConstantsUtil.SPEAKER_MGR_NAME, //
+					ConstantsUtil.SPEAKER_MGR_DESCRIPTION, //
+					ConstantsUtil.SPEAKER_MGR_GGPLUS, //
+					ImgBundle.INSTANCE.mgr()));
+
+			view.addSpeakerDescription(createSpeakerDescription(//
+					ConstantsUtil.SPEAKER_VJA_NAME, //
+					ConstantsUtil.SPEAKER_VJA_DESCRIPTION, //
+					ConstantsUtil.SPEAKER_VJA_GGPLUS, //
+					ImgBundle.INSTANCE.vja()));
+
+			view.addSpeakerDescription(createSpeakerDescription(//
+					ConstantsUtil.SPEAKER_NFS_NAME, //
+					ConstantsUtil.SPEAKER_NFS_DESCRIPTION, //
+					ConstantsUtil.SPEAKER_NFS_GGPLUS, //
+					ImgBundle.INSTANCE.nfs()));
+
+			view.addSpeakerDescription(createSpeakerDescription(//
+					ConstantsUtil.SPEAKER_GGU_NAME, //
+					ConstantsUtil.SPEAKER_GGU_DESCRIPTION, //
+					ConstantsUtil.SPEAKER_GGU_GGPLUS, //
+					ImgBundle.INSTANCE.ggu()));
+
+			view.addSpeakerDescription(createSpeakerDescription(//
+					ConstantsUtil.SPEAKER_TPT_NAME, //
+					ConstantsUtil.SPEAKER_TPT_DESCRIPTION, //
+					ConstantsUtil.SPEAKER_TPT_GGPLUS, //
+					ImgBundle.INSTANCE.tpt()));
+
+			view.addSpeakerDescription(createSpeakerDescription(//
+					ConstantsUtil.SPEAKER_MGU_NAME, //
+					ConstantsUtil.SPEAKER_MGU_DESCRIPTION, //
+					ConstantsUtil.SPEAKER_MGU_GGPLUS, //
+					ImgBundle.INSTANCE.mgu()));
+
+			view.addSpeakerDescription(createSpeakerDescription(//
+					ConstantsUtil.SPEAKER_ARD_NAME, //
+					ConstantsUtil.SPEAKER_ARD_DESCRIPTION, //
+					ConstantsUtil.SPEAKER_ARD_GGPLUS, //
+					ImgBundle.INSTANCE.ard()));
+
+			view.addSpeakerDescription(createSpeakerDescription(//
+					ConstantsUtil.SPEAKER_OGR_NAME, //
+					ConstantsUtil.SPEAKER_OGR_DESCRIPTION, //
+					ConstantsUtil.SPEAKER_OGR_GGPLUS, //
+					ImgBundle.INSTANCE.ogr()));
+
+			view.addSpeakerDescription(createSpeakerDescription(//
+					ConstantsUtil.SPEAKER_SJR_NAME, //
+					ConstantsUtil.SPEAKER_SJR_DESCRIPTION, //
+					ConstantsUtil.SPEAKER_SJR_GGPLUS, //
+					ImgBundle.INSTANCE.sjr()));
+
+			view.addSpeakerDescription(createSpeakerDescription(//
+					ConstantsUtil.SPEAKER_FBY_NAME, //
+					ConstantsUtil.SPEAKER_FBY_DESCRIPTION, //
+					ConstantsUtil.SPEAKER_FBY_GGPLUS, //
+					ImgBundle.INSTANCE.fby()));
+
+			view.addSpeakerDescription(createSpeakerDescription(//
+					ConstantsUtil.SPEAKER_DGD_NAME, //
+					ConstantsUtil.SPEAKER_DGD_DESCRIPTION, //
+					ConstantsUtil.SPEAKER_DGD_GGPLUS, //
+					ImgBundle.INSTANCE.dgd()));
+
 			view.setInit(true);
 		}
 
 		panel.setWidget(view);
 	}
 
-	private String createSpeakerDescription(String speakerName, String speakerDescription, String ggplusUrl, String speakerImg) {
+	private String createSpeakerDescription(String speakerName,
+			String speakerDescription, String ggplusUrl,
+			ImageResource speakerImg) {
 		StringBuilder builder = new StringBuilder();
 		builder.append(ConstantsUtil.SPEAKER_1);
-		builder.append(ggplusUrl);
+		// builder.append(ggplusUrl);
+		// builder.append(ConstantsUtil.SPEAKER_2);
+		// builder.append(speakerName);
+		// builder.append(ConstantsUtil.SPEAKER_3);
+		Image img = new Image(speakerImg);
+		// img.setPixelSize(75, 75);
+		// img.setLayoutData(new Layout)
+		// tHeight("75px");
+		// img.setWidth("75px");
+		// img.getElement().setAttribute("width", "75");
+		// img.getElement().setAttribute("height", "75");
+		builder.append(img);
 		builder.append(ConstantsUtil.SPEAKER_2);
-		builder.append(speakerName);
-		builder.append(ConstantsUtil.SPEAKER_3);
-		builder.append(speakerImg);
 		builder.append(ConstantsUtil.SPEAKER_4);
 		builder.append(ggplusUrl);
 		builder.append(ConstantsUtil.SPEAKER_5);
@@ -90,5 +203,4 @@ public class SpeakersActivity extends MGWTAbstractActivity {
 		builder.append(ConstantsUtil.SPEAKER_7);
 		return builder.toString();
 	}
-
 }
