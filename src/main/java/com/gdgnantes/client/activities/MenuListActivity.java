@@ -20,6 +20,7 @@ import com.gdgnantes.client.ClientFactory;
 import com.gdgnantes.client.activities.home.Topic;
 import com.gdgnantes.client.cst.ConstantsUtil;
 import com.gdgnantes.client.places.AboutPlace;
+import com.gdgnantes.client.places.CalendarByRoomPlace;
 import com.gdgnantes.client.places.CalendarPlace;
 import com.gdgnantes.client.places.SpeakersPlace;
 import com.gdgnantes.client.views.MenuListView;
@@ -42,7 +43,8 @@ public class MenuListActivity extends MGWTAbstractActivity {
 	}
 
 	@Override
-	public void start(AcceptsOneWidget panel, com.google.gwt.event.shared.EventBus eventBus) {
+	public void start(AcceptsOneWidget panel,
+			com.google.gwt.event.shared.EventBus eventBus) {
 		MenuListView view = clientFactory.getHomeView();
 
 		// Ajout du titre principal
@@ -58,46 +60,54 @@ public class MenuListActivity extends MGWTAbstractActivity {
 		view.setTopics(createTopicsList());
 
 		// Ajout des places sur les différents boutons du menu
-		addHandlerRegistration(view.getCellSelectedHandler().addCellSelectedHandler(new CellSelectedHandler() {
+		addHandlerRegistration(view.getCellSelectedHandler()
+				.addCellSelectedHandler(new CellSelectedHandler() {
 
-			@Override
-			public void onCellSelected(CellSelectedEvent event) {
-				int index = event.getIndex();
-				// Bouton 1 : Agenda
-				if (index == 0) {
-					clientFactory.getPlaceController().goTo(new CalendarPlace());
-					return;
-				}
-				// // Bouton 2
-				// if (index == 1) {
-				// clientFactory.getPlaceController().goTo(new TemplatePlace());
-				// return;
-				// }
-				// Bouton 3 : Speakers
-				if (index == 2) {
-					clientFactory.getPlaceController().goTo(new SpeakersPlace());
-					return;
-				}
-				// // Bouton 4
-				// if (index == 3) {
-				// clientFactory.getPlaceController().goTo(new TemplatePlace());
-				// return;
-				// }
-				// // Bouton 5
-				// if (index == 4) {
-				// clientFactory.getPlaceController().goTo(new TemplatePlace());
-				// return;
-				// }
-			}
-		}));
+					@Override
+					public void onCellSelected(CellSelectedEvent event) {
+						int index = event.getIndex();
+						// Bouton 1 : Agenda
+						if (index == 0) {
+							clientFactory.getPlaceController().goTo(
+									new CalendarPlace());
+							return;
+						}
+						// // Bouton 2
+						if (index == 1) {
+							clientFactory.getPlaceController().goTo(
+									new CalendarByRoomPlace());
+							return;
+						}
+						// Bouton 3 : Speakers
+						if (index == 2) {
+							clientFactory.getPlaceController().goTo(
+									new SpeakersPlace());
+							return;
+						}
+						// // Bouton 4
+						// if (index == 3) {
+						// clientFactory.getPlaceController().goTo(
+						// new CalendarByRoomPlace());
+						// return;
+						// }
+						// // Bouton 5
+						// if (index == 4) {
+						// clientFactory.getPlaceController().goTo(new
+						// TemplatePlace());
+						// return;
+						// }
+					}
+				}));
 
 		// Ajout de la place sur le clic droit
-		addHandlerRegistration(view.getAboutButton().addTapHandler(new TapHandler() {
-			@Override
-			public void onTap(TapEvent event) {
-				clientFactory.getPlaceController().goTo(new AboutPlace());
-			}
-		}));
+		addHandlerRegistration(view.getAboutButton().addTapHandler(
+				new TapHandler() {
+					@Override
+					public void onTap(TapEvent event) {
+						clientFactory.getPlaceController().goTo(
+								new AboutPlace());
+					}
+				}));
 
 		panel.setWidget(view);
 	}
@@ -111,6 +121,7 @@ public class MenuListActivity extends MGWTAbstractActivity {
 		ArrayList<Topic> list = new ArrayList<Topic>();
 		// list.add(new Topic("Accueil", 5));
 		list.add(new Topic(ConstantsUtil.MENU_CALENDAR, 5));
+		list.add(new Topic(ConstantsUtil.MENU_CALENDAR_ROOM, 5));
 		list.add(new Topic(ConstantsUtil.MENU_SESSIONS, 5));
 		list.add(new Topic(ConstantsUtil.MENU_SPEAKERS, 5));
 		list.add(new Topic(ConstantsUtil.MENU_PARTNERS, 5));

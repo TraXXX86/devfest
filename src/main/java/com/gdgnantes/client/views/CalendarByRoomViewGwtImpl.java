@@ -21,14 +21,14 @@ import com.googlecode.mgwt.ui.client.widget.ScrollPanel;
  * @author majaouen
  * 
  */
-public class CalendarViewGwtImpl implements CalendarView {
+public class CalendarByRoomViewGwtImpl implements CalendarByRoomView {
 
 	private LayoutPanel main;
 	private HeaderPanel headerPanel;
 	private HeaderButton headerBackButton;
 	private Carousel carousel;
 
-	public CalendarViewGwtImpl() {
+	public CalendarByRoomViewGwtImpl() {
 		main = new LayoutPanel();
 
 		headerPanel = new HeaderPanel();
@@ -58,16 +58,16 @@ public class CalendarViewGwtImpl implements CalendarView {
 	 */
 	private void createCarouselSalle1(Carousel carousel) {
 		createCarouselSalle(carousel,//
-				ConstantsUtil.CALENDAR_SALLE_1,//
+				ConstantsUtil.CALENDAR_ROOM_1,//
 				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_1,//
 				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_2,//
 				ConstantsUtil.CALENDAR_SALLE_1_ACTIVITY_1,//
-				ConstantsUtil.CALENDAR_SALLE_1_ACTIVITY_2,//
+				ConstantsUtil.CALENDAR_SALLE_2_ACTIVITY_2,//
 				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_3,//
-				ConstantsUtil.CALENDAR_SALLE_1_ACTIVITY_3,//
-				ConstantsUtil.CALENDAR_SALLE_1_ACTIVITY_4,//
+				ConstantsUtil.CALENDAR_SALLE_2_ACTIVITY_3,//
+				ConstantsUtil.CALENDAR_SALLE_3_ACTIVITY_4,//
 				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_4,//
-				ConstantsUtil.CALENDAR_SALLE_1_ACTIVITY_5,//
+				ConstantsUtil.CALENDAR_SALLE_3_ACTIVITY_5,//
 				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_5,//
 				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_6);
 	}
@@ -79,14 +79,14 @@ public class CalendarViewGwtImpl implements CalendarView {
 	 */
 	private void createCarouselSalle2(Carousel carousel2) {
 		createCarouselSalle(carousel2,//
-				ConstantsUtil.CALENDAR_SALLE_2,//
+				ConstantsUtil.CALENDAR_ROOM_2,//
 				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_1,//
 				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_2,//
 				ConstantsUtil.CALENDAR_SALLE_2_ACTIVITY_1,//
-				ConstantsUtil.CALENDAR_SALLE_2_ACTIVITY_2,//
+				ConstantsUtil.CALENDAR_SALLE_1_ACTIVITY_2,//
 				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_3,//
-				ConstantsUtil.CALENDAR_SALLE_2_ACTIVITY_3,//
-				ConstantsUtil.CALENDAR_SALLE_2_ACTIVITY_4,//
+				ConstantsUtil.CALENDAR_SALLE_1_ACTIVITY_3,//
+				ConstantsUtil.CALENDAR_SALLE_1_ACTIVITY_4,//
 				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_4,//
 				ConstantsUtil.CALENDAR_SALLE_2_ACTIVITY_5,//
 				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_5,//
@@ -100,16 +100,16 @@ public class CalendarViewGwtImpl implements CalendarView {
 	 */
 	private void createCarouselSalle3(Carousel carousel2) {
 		createCarouselSalle(carousel2,//
-				ConstantsUtil.CALENDAR_SALLE_3,//
+				ConstantsUtil.CALENDAR_ROOM_3,//
 				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_1,//
 				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_2,//
 				ConstantsUtil.CALENDAR_SALLE_3_ACTIVITY_1,//
 				ConstantsUtil.CALENDAR_SALLE_3_ACTIVITY_2,//
 				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_3,//
 				ConstantsUtil.CALENDAR_SALLE_3_ACTIVITY_3,//
-				ConstantsUtil.CALENDAR_SALLE_3_ACTIVITY_4,//
+				ConstantsUtil.CALENDAR_SALLE_2_ACTIVITY_4,//
 				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_4,//
-				ConstantsUtil.CALENDAR_SALLE_3_ACTIVITY_5,//
+				ConstantsUtil.CALENDAR_SALLE_1_ACTIVITY_5,//
 				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_5,//
 				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_6);
 	}
@@ -121,7 +121,7 @@ public class CalendarViewGwtImpl implements CalendarView {
 	 */
 	private void createCarouselSalle4(Carousel carousel2) {
 		createCarouselSalle(carousel2,//
-				ConstantsUtil.CALENDAR_SALLE_4,//
+				ConstantsUtil.CALENDAR_ROOM_4,//
 				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_1,//
 				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_2,//
 				ConstantsUtil.CALENDAR_SALLE_4_ACTIVITY_1,//
@@ -185,7 +185,7 @@ public class CalendarViewGwtImpl implements CalendarView {
 		RoundPanel flowPanel3 = new RoundPanel();
 
 		// Titre de la page du carousel
-		flowPanel3.add(createSlide(ConstantsUtil.CALENDAR_SALLE + roomName));
+		flowPanel3.add(createSlide(ConstantsUtil.CALENDAR_ROOM + roomName));
 
 		// Agenda de la salle
 		flowPanel3.add(createSlide(ConstantsUtil.CALENDAR_HUIT_A_NEUF, huit));

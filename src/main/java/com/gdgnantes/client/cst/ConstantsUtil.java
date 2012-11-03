@@ -30,7 +30,8 @@ public class ConstantsUtil {
 	// ################################################################
 	// ############################ Menu constants
 	// ################################################################
-	public static final String MENU_CALENDAR = "Agenda";
+	public static final String MENU_CALENDAR = "Agenda par Track";
+	public static final String MENU_CALENDAR_ROOM = "Agenda par Salle";
 	public static final String MENU_SESSIONS = "Sessions";
 	public static final String MENU_SPEAKERS = "Speakers";
 	public static final String MENU_PARTNERS = "Partenaires";
@@ -39,7 +40,12 @@ public class ConstantsUtil {
 	// ################################################################
 	// ############################ Calendar constants
 	// ################################################################
-	public static final String CALENDAR_SALLE = "Salle : ";
+	public static final String CALENDAR_ROOM = "Salle ";
+	public static final String CALENDAR_ROOM_1 = "Titan";
+	public static final String CALENDAR_ROOM_2 = "Graslin";
+	public static final String CALENDAR_ROOM_3 = "Belem";
+	public static final String CALENDAR_ROOM_4 = "Les Machines";
+	public static final String CALENDAR_SALLE = "Track ";
 	public static final String CALENDAR_SALLE_1 = "Android";
 	public static final String CALENDAR_SALLE_2 = "Web";
 	public static final String CALENDAR_SALLE_3 = "Cloud & APIs";
@@ -55,34 +61,36 @@ public class ConstantsUtil {
 	public static final String CALENDAR_QUINZE_A_SEIZE = "15h40 - 16h00";
 	public static final String CALENDAR_SEIZE_A_DIX_SEPT = "16h00 - 17h00";
 	public static final String CALENDAR_DIX_SEPT_A_DIX_HUIT = "17h10 - 18h00";
+	public static final String CALENDAR_DIX_NEUF = "19h30 - 00h00";
 
-	public static final String CALENDAR_SALLE_X_ACTIVITY_1 = "Ouverture des portes et accueil des participants Café / Croissants";
-	public static final String CALENDAR_SALLE_X_ACTIVITY_2 = "Key-note, présentation des conférences, codelab de la journée, des sponsors... ";
-	public static final String CALENDAR_SALLE_X_ACTIVITY_3 = "Repas du midi offert sur place";
-	public static final String CALENDAR_SALLE_X_ACTIVITY_4 = "Pause";
+	public static final String CALENDAR_SALLE_X_ACTIVITY_1 = "Ouverture des portes<br/>Café / Croissants";
+	public static final String CALENDAR_SALLE_X_ACTIVITY_2 = "Keynote<br/>Amphi";
+	public static final String CALENDAR_SALLE_X_ACTIVITY_3 = "Repas du midi<br/>Tour LU";
+	public static final String CALENDAR_SALLE_X_ACTIVITY_4 = "Pause / Goûter<br/>Tour LU";
 	public static final String CALENDAR_SALLE_X_ACTIVITY_5 = "Pitch Sessions /  Démos / Discussions libres";
+	public static final String CALENDAR_SALLE_X_ACTIVITY_6 = "After Party \"Sounderbox\"<br/>Melting Potes";
 
-	public static final String CALENDAR_SALLE_1_ACTIVITY_1 = "Sécurité Android";
-	public static final String CALENDAR_SALLE_1_ACTIVITY_2 = "Android & NFC";
-	public static final String CALENDAR_SALLE_1_ACTIVITY_3 = "Google TV";
-	public static final String CALENDAR_SALLE_1_ACTIVITY_4 = "TBD";
-	public static final String CALENDAR_SALLE_1_ACTIVITY_5 = "Présentation de RoboSpice";
+	public static final String CALENDAR_SALLE_1_ACTIVITY_1 = "Sécurité Android<br/>Salle Titan";
+	public static final String CALENDAR_SALLE_1_ACTIVITY_2 = "Android & NFC<br/>Salle Graslin";
+	public static final String CALENDAR_SALLE_1_ACTIVITY_3 = "Google TV<br/>Salle Graslin";
+	public static final String CALENDAR_SALLE_1_ACTIVITY_4 = "Wifi 2P2<br/>Salle Graslin";
+	public static final String CALENDAR_SALLE_1_ACTIVITY_5 = "Présentation de RoboSpice<br/>Salle Belem";
 
-	public static final String CALENDAR_SALLE_2_ACTIVITY_1 = "Big Data & HTML5";
-	public static final String CALENDAR_SALLE_2_ACTIVITY_2 = "GWT Offline & HTML5";
-	public static final String CALENDAR_SALLE_2_ACTIVITY_3 = "Angular JS";
-	public static final String CALENDAR_SALLE_2_ACTIVITY_4 = "HTML5 Offline";
-	public static final String CALENDAR_SALLE_2_ACTIVITY_5 = "Dart";
+	public static final String CALENDAR_SALLE_2_ACTIVITY_1 = "Big Data & HTML5<br/>Salle Graslin";
+	public static final String CALENDAR_SALLE_2_ACTIVITY_2 = "GWT Offline & HTML5<br/>Salle Titan";
+	public static final String CALENDAR_SALLE_2_ACTIVITY_3 = "Angular JS<br/>Salle Titan";
+	public static final String CALENDAR_SALLE_2_ACTIVITY_4 = "HTML5 Offline<br/>Salle Belem";
+	public static final String CALENDAR_SALLE_2_ACTIVITY_5 = "Dart<br/>Salle Graslin";
 
-	public static final String CALENDAR_SALLE_3_ACTIVITY_1 = "Google Cloud EndPoints";
-	public static final String CALENDAR_SALLE_3_ACTIVITY_2 = "Chrome Extensions & OAuth2";
-	public static final String CALENDAR_SALLE_3_ACTIVITY_3 = "Drive SDK";
-	public static final String CALENDAR_SALLE_3_ACTIVITY_4 = "AppEngine";
-	public static final String CALENDAR_SALLE_3_ACTIVITY_5 = "TBD";
+	public static final String CALENDAR_SALLE_3_ACTIVITY_1 = "Google Cloud EndPoints<br/>Salle Belem";
+	public static final String CALENDAR_SALLE_3_ACTIVITY_2 = "Chrome Extensions & OAuth2<br/>Salle Belem";
+	public static final String CALENDAR_SALLE_3_ACTIVITY_3 = "Drive SDK<br/>Salle Belem";
+	public static final String CALENDAR_SALLE_3_ACTIVITY_4 = "AppEngine & ComputeEngine<br/>Salle Titan";
+	public static final String CALENDAR_SALLE_3_ACTIVITY_5 = "Trucs et astuces du Cloud<br/>Salle Titan";
 
-	public static final String CALENDAR_SALLE_4_ACTIVITY_1 = "Le président est ... (Atelier AppEngine)";
-	public static final String CALENDAR_SALLE_4_ACTIVITY_2 = "Android BootStrap";
-	public static final String CALENDAR_SALLE_4_ACTIVITY_3 = "Présentation BeMyApp";
+	public static final String CALENDAR_SALLE_4_ACTIVITY_1 = "Le président est ... (Atelier AppEngine)<br/>Salle Les Machines";
+	public static final String CALENDAR_SALLE_4_ACTIVITY_2 = "Android BootStrap<br/>Salle Les Machines";
+	public static final String CALENDAR_SALLE_4_ACTIVITY_3 = "Présentation BeMyApp<br/>Salle Les Machines";
 
 	// ################################################################
 	// ############################ Speakers constants

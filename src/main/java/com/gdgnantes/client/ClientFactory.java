@@ -16,6 +16,7 @@
 package com.gdgnantes.client;
 
 import com.gdgnantes.client.views.AboutView;
+import com.gdgnantes.client.views.CalendarByRoomView;
 import com.gdgnantes.client.views.CalendarView;
 import com.gdgnantes.client.views.MenuListView;
 import com.gdgnantes.client.views.SpeakersView;
@@ -53,5 +54,7 @@ public interface ClientFactory {
 	 * @return
 	 */
 	public SpeakersView getSpeakersView();
+
+	public CalendarByRoomView getCalendarByRoomView();
 
 }

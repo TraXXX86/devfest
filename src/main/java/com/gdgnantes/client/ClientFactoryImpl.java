@@ -17,6 +17,8 @@ package com.gdgnantes.client;
 
 import com.gdgnantes.client.views.AboutView;
 import com.gdgnantes.client.views.AboutViewGwtImpl;
+import com.gdgnantes.client.views.CalendarByRoomView;
+import com.gdgnantes.client.views.CalendarByRoomViewGwtImpl;
 import com.gdgnantes.client.views.CalendarView;
 import com.gdgnantes.client.views.CalendarViewGwtImpl;
 import com.gdgnantes.client.views.MenuListView;
@@ -39,6 +41,7 @@ public class ClientFactoryImpl implements ClientFactory {
 	private PlaceController placeController;
 	private MenuListView homeViewImpl;
 	private CalendarView calendarViewImpl;
+	private CalendarByRoomView calendarByRoomViewImpl;
 	private TemplateView templateViewImpl;
 	private AboutViewGwtImpl aboutViewImpl;
 	private SpeakersViewGwtImpl speakersViewImpl;
@@ -84,6 +87,14 @@ public class ClientFactoryImpl implements ClientFactory {
 			calendarViewImpl = new CalendarViewGwtImpl();
 		}
 		return calendarViewImpl;
+	}
+
+	@Override
+	public CalendarByRoomView getCalendarByRoomView() {
+		if (calendarByRoomViewImpl == null) {
+			calendarByRoomViewImpl = new CalendarByRoomViewGwtImpl();
+		}
+		return calendarByRoomViewImpl;
 	}
 
 	/*

@@ -3,18 +3,18 @@ package com.gdgnantes.client.places;
 import com.google.gwt.place.shared.Place;
 import com.google.gwt.place.shared.PlaceTokenizer;
 
-public class TemplatePlace extends Place {
+public class CalendarByRoomPlace extends Place {
 
-	public static class TemplatePlaceTokenizer implements
-			PlaceTokenizer<TemplatePlace> {
+	public static class CalendarByRoomPlaceTokenizer implements
+			PlaceTokenizer<CalendarByRoomPlace> {
 
 		@Override
-		public TemplatePlace getPlace(String token) {
-			return new TemplatePlace();
+		public CalendarByRoomPlace getPlace(String token) {
+			return new CalendarByRoomPlace();
 		}
 
 		@Override
-		public String getToken(TemplatePlace place) {
+		public String getToken(CalendarByRoomPlace place) {
 			return "";
 		}
 
@@ -32,7 +32,7 @@ public class TemplatePlace extends Place {
 		if (other == null)
 			return false;
 
-		if (other instanceof TemplatePlace)
+		if (other instanceof CalendarByRoomPlace)
 			return true;
 		return false;
 	}

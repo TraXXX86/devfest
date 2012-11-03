@@ -2,10 +2,12 @@ package com.gdgnantes.client;
 
 import com.gdgnantes.client.activities.AboutActivity;
 import com.gdgnantes.client.activities.CalendarActivity;
+import com.gdgnantes.client.activities.CalendarByRoomActivity;
 import com.gdgnantes.client.activities.MenuListActivity;
 import com.gdgnantes.client.activities.SpeakersActivity;
 import com.gdgnantes.client.activities.TemplateActivity;
 import com.gdgnantes.client.places.AboutPlace;
+import com.gdgnantes.client.places.CalendarByRoomPlace;
 import com.gdgnantes.client.places.CalendarPlace;
 import com.gdgnantes.client.places.HomePlace;
 import com.gdgnantes.client.places.SpeakersPlace;
@@ -31,6 +33,9 @@ public class PhoneActivityMapper implements ActivityMapper {
 		}
 		if (place instanceof CalendarPlace) {
 			return new CalendarActivity(clientFactory);
+		}
+		if (place instanceof CalendarByRoomPlace) {
+			return new CalendarByRoomActivity(clientFactory);
 		}
 		if (place instanceof AboutPlace) {
 			return new AboutActivity(clientFactory);

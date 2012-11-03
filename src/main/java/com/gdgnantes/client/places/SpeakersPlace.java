@@ -5,7 +5,8 @@ import com.google.gwt.place.shared.PlaceTokenizer;
 
 public class SpeakersPlace extends Place {
 
-	public static class SpeakersPlaceTokenizer implements PlaceTokenizer<SpeakersPlace> {
+	public static class SpeakersPlaceTokenizer implements
+			PlaceTokenizer<SpeakersPlace> {
 
 		@Override
 		public SpeakersPlace getPlace(String token) {
