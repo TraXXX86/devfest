@@ -23,6 +23,10 @@ import com.gdgnantes.client.views.CalendarView;
 import com.gdgnantes.client.views.CalendarViewGwtImpl;
 import com.gdgnantes.client.views.MenuListView;
 import com.gdgnantes.client.views.MenuListViewGwtImpl;
+import com.gdgnantes.client.views.PartnerView;
+import com.gdgnantes.client.views.PartnerViewGwtImpl;
+import com.gdgnantes.client.views.SessionView;
+import com.gdgnantes.client.views.SessionViewGwtImpl;
 import com.gdgnantes.client.views.SpeakersView;
 import com.gdgnantes.client.views.SpeakersViewGwtImpl;
 import com.gdgnantes.client.views.TemplateView;
@@ -45,6 +49,8 @@ public class ClientFactoryImpl implements ClientFactory {
 	private TemplateView templateViewImpl;
 	private AboutViewGwtImpl aboutViewImpl;
 	private SpeakersViewGwtImpl speakersViewImpl;
+	private SessionViewGwtImpl sessionViewImpl;
+	private PartnerViewGwtImpl partnerViewImpl;
 
 	public ClientFactoryImpl() {
 		eventBus = new SimpleEventBus();
@@ -134,6 +140,22 @@ public class ClientFactoryImpl implements ClientFactory {
 			speakersViewImpl = new SpeakersViewGwtImpl();
 		}
 		return speakersViewImpl;
+	}
+
+	@Override
+	public SessionView getSessionView() {
+		if (sessionViewImpl == null) {
+			sessionViewImpl = new SessionViewGwtImpl();
+		}
+		return sessionViewImpl;
+	}
+
+	@Override
+	public PartnerView getPartnerView() {
+		if (partnerViewImpl == null) {
+			partnerViewImpl = new PartnerViewGwtImpl();
+		}
+		return partnerViewImpl;
 	}
 
 }

@@ -19,6 +19,8 @@ import com.gdgnantes.client.places.AboutPlace.AboutPlaceTokenizer;
 import com.gdgnantes.client.places.CalendarByRoomPlace.CalendarByRoomPlaceTokenizer;
 import com.gdgnantes.client.places.CalendarPlace.CalendarPlaceTokenizer;
 import com.gdgnantes.client.places.HomePlace.HomePlaceTokenizer;
+import com.gdgnantes.client.places.PartnerPlace.PartnerPlaceTokenizer;
+import com.gdgnantes.client.places.SessionPlace.SessionPlaceTokenizer;
 import com.gdgnantes.client.places.SpeakersPlace.SpeakersPlaceTokenizer;
 import com.gdgnantes.client.places.TemplatePlace.TemplatePlaceTokenizer;
 import com.google.gwt.place.shared.PlaceHistoryMapper;
@@ -33,6 +35,8 @@ import com.google.gwt.place.shared.WithTokenizers;
 		CalendarPlaceTokenizer.class, //
 		CalendarByRoomPlaceTokenizer.class, //
 		SpeakersPlaceTokenizer.class, //
+		SessionPlaceTokenizer.class, //
+		PartnerPlaceTokenizer.class, //
 		TemplatePlaceTokenizer.class })
 public interface AppPlaceHistoryMapper extends PlaceHistoryMapper {
 }

@@ -22,6 +22,8 @@ import com.gdgnantes.client.cst.ConstantsUtil;
 import com.gdgnantes.client.places.AboutPlace;
 import com.gdgnantes.client.places.CalendarByRoomPlace;
 import com.gdgnantes.client.places.CalendarPlace;
+import com.gdgnantes.client.places.PartnerPlace;
+import com.gdgnantes.client.places.SessionPlace;
 import com.gdgnantes.client.places.SpeakersPlace;
 import com.gdgnantes.client.views.MenuListView;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
@@ -66,13 +68,13 @@ public class MenuListActivity extends MGWTAbstractActivity {
 					@Override
 					public void onCellSelected(CellSelectedEvent event) {
 						int index = event.getIndex();
-						// Bouton 1 : Agenda
+						// Bouton 1 : Agenda par Track
 						if (index == 0) {
 							clientFactory.getPlaceController().goTo(
 									new CalendarPlace());
 							return;
 						}
-						// // Bouton 2
+						// Bouton 2 : Agenda par Room
 						if (index == 1) {
 							clientFactory.getPlaceController().goTo(
 									new CalendarByRoomPlace());
@@ -84,18 +86,18 @@ public class MenuListActivity extends MGWTAbstractActivity {
 									new SpeakersPlace());
 							return;
 						}
-						// // Bouton 4
-						// if (index == 3) {
-						// clientFactory.getPlaceController().goTo(
-						// new CalendarByRoomPlace());
-						// return;
-						// }
-						// // Bouton 5
-						// if (index == 4) {
-						// clientFactory.getPlaceController().goTo(new
-						// TemplatePlace());
-						// return;
-						// }
+						// Bouton 4 : Sessions
+						if (index == 3) {
+							clientFactory.getPlaceController().goTo(
+									new SessionPlace());
+							return;
+						}
+						// Bouton 5 : Partners
+						if (index == 4) {
+							clientFactory.getPlaceController().goTo(
+									new PartnerPlace());
+							return;
+						}
 					}
 				}));
 

@@ -19,6 +19,8 @@ import com.gdgnantes.client.views.AboutView;
 import com.gdgnantes.client.views.CalendarByRoomView;
 import com.gdgnantes.client.views.CalendarView;
 import com.gdgnantes.client.views.MenuListView;
+import com.gdgnantes.client.views.PartnerView;
+import com.gdgnantes.client.views.SessionView;
 import com.gdgnantes.client.views.SpeakersView;
 import com.gdgnantes.client.views.TemplateView;
 import com.google.gwt.place.shared.PlaceController;
@@ -56,5 +58,9 @@ public interface ClientFactory {
 	public SpeakersView getSpeakersView();
 
 	public CalendarByRoomView getCalendarByRoomView();
+
+	public SessionView getSessionView();
+
+	public PartnerView getPartnerView();
 
 }

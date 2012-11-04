@@ -189,4 +189,6 @@ public class ConstantsUtil {
 	public static final String SPEAKER_DGD_GGPLUS = "https://plus.google.com/u/0/115263933340916245640/about";
 	public static final String SPEAKER_DGD_DESCRIPTION = "  Directeur des Operations et de L'innovation chez SFEIR, Didier Girard est Docteur en Informatique de l'ENS Lyon. Il aime acquérir des connaissances et les partager. Toujours à la recherche de technologies qui va s'imposer sur le marché dans les années à venir, il travaille sur des projets mettant en oeuvre le Cloud Computing depuis 2008.<br />";
 
+	public static final String SESSION_ANDROID1 = "L'objectif de cet atelier est mettre en avant les bonnes pratiques liés à l'utilisation des librairies android, quelles librairies utiliser ? Comment les faires marcher ensemble. Nous reviendrons aussi sur des projets comme \"Android Bootstrap\" et \"Android KickStartR\"  : des projets incluant les Fragments, Fragment Pager, Account Manager, android-maven-plugin, RoboGuice 2, ActionBarSherlock 4, ViewPagerIndicator, http-request, GSON, Robotium ... ";
+
 }
