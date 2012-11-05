@@ -40,7 +40,7 @@ public class CalendarByRoomActivity extends MGWTAbstractActivity {
 		final CalendarByRoomView view = clientFactory.getCalendarByRoomView();
 
 		// Ajout du titre principal
-		view.setTitle(ConstantsUtil.MENU_CALENDAR_ROOM);
+		// view.setTitle(ConstantsUtil.MENU_CALENDAR_ROOM);
 
 		// Ajout du label du bouton de retour
 		view.setBackButtonText(ConstantsUtil.HEADER_BACK);
@@ -58,5 +58,4 @@ public class CalendarByRoomActivity extends MGWTAbstractActivity {
 
 		panel.setWidget(view);
 	}
-
 }

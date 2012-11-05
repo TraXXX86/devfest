@@ -28,10 +28,6 @@ public class SessionViewGwtImpl implements SessionView {
 	private LayoutPanel main;
 	private HeaderPanel headerPanel;
 	private HeaderButton headerBackButton;
-	private LayoutPanel mainForScrollPanel1;
-	private LayoutPanel mainForScrollPanel2;
-	private LayoutPanel mainForScrollPanel3;
-	private LayoutPanel mainForScrollPanel4;
 	private Carousel carousel;
 	private boolean isInit = false;
 
@@ -67,9 +63,10 @@ public class SessionViewGwtImpl implements SessionView {
 		main.add(carousel);
 
 		this.createCarouselSessionAndroid(carousel);
-		this.createCarousel(carousel);
-		this.createCarousel(carousel);
-		this.createCarousel(carousel);
+		this.createCarouselSessionWeb(carousel);
+		this.createCarouselSessionCloud(carousel);
+		this.createCarouselSessionCodelab(carousel);
+		// this.createCarousel(carousel);
 
 	}
 
@@ -84,12 +81,133 @@ public class SessionViewGwtImpl implements SessionView {
 			Carousel carousel) {
 
 		FlowPanel panel = this.createCarousel(carousel);
-		panel.add(this.createSessionDesc("Android Bootstrap",//
-				"par Jean-François Garreau",//
-				"Salle Les Machines",//
-				ConstantsUtil.SESSION_ANDROID1,//
+
+		panel.add(this.createSessionDesc("Sécurité Android",//
+				"par Philippe Prados",//
+				"Salle Titan",//
+				ConstantsUtil.SESSION_ANDROID2,//
+				"fr",//
+				"101"));
+
+		panel.add(this.createSessionDesc("Présentation de RoboSpice",//
+				"par Stéphane Nicolas",//
+				"Salle Belem",//
+				ConstantsUtil.SESSION_ANDROID3,//
 				"fr",//
 				"202"));
+
+		panel.add(this
+				.createSessionDesc(
+						"Android NFC pour Nouvelle Façon de Communiquer avec nos Mobiles ?",//
+						"par Guillaume Gerbaud",//
+						"Salle Graslin",//
+						ConstantsUtil.SESSION_ANDROID4,//
+						"fr",//
+						"202"));
+
+		panel.add(this.createSessionDesc("Wifi P2P",//
+				"par Frédéric Berthéléry",//
+				"Salle Graslin",//
+				ConstantsUtil.SESSION_ANDROID5,//
+				"fr",//
+				"202"));
+
+		panel.add(this.createSessionDesc("Android in your TV",//
+				"par Olivier Gonthier",//
+				"Salle Graslin",//
+				ConstantsUtil.SESSION_ANDROID6,//
+				"fr",//
+				"202"));
+	}
+
+	private void createCarouselSessionWeb( //
+			Carousel carousel) {
+
+		FlowPanel panel = this.createCarousel(carousel);
+		panel.add(this.createSessionDesc("Dart",//
+				"par Nicolas François et Guillaume Girou",//
+				"Salle Graslin",//
+				ConstantsUtil.SESSION_WEB1,//
+				"fr",//
+				"101"));
+
+		panel.add(this.createSessionDesc("Big Data & HTML5",//
+				"par Ido Green",//
+				"Salle Graslin (hangout)",//
+				ConstantsUtil.SESSION_WEB2,//
+				"en",//
+				"202"));
+
+		panel.add(this.createSessionDesc("HTML5 et le mode déconnecté",//
+				"par Antoine Richard",//
+				"Salle Belem",//
+				ConstantsUtil.SESSION_WEB3,//
+				"fr",//
+				"101"));
+
+		panel.add(this.createSessionDesc(
+				"Building awesome client-side web apps with AngularJS",//
+				"par Vojta Jina",//
+				"Salle Titan",//
+				ConstantsUtil.SESSION_WEB4,//
+				"en",//
+				"101"));
+
+		panel.add(this.createSessionDesc(
+				"Développer une application Web Offline avec GWT et HTML5 ",//
+				"par Sami Jaber",//
+				"Salle Titan",//
+				ConstantsUtil.SESSION_WEB5,//
+				"fr",//
+				"202"));
+	}
+
+	private void createCarouselSessionCloud( //
+			Carousel carousel) {
+
+		FlowPanel panel = this.createCarousel(carousel);
+		panel.add(this.createSessionDesc("App Engine et Compute Engine",//
+				"par Ludovic Champenois",//
+				"Salle Titan",//
+				ConstantsUtil.SESSION_CLOUD1,//
+				"fr",//
+				"202"));
+		panel.add(this.createSessionDesc("Google Cloud EndPoints",//
+				"par Maxime Gréau",//
+				"Salle Belem",//
+				ConstantsUtil.SESSION_CLOUD2,//
+				"fr",//
+				"202"));
+
+		panel.add(this.createSessionDesc("Google Drive SDK",//
+				"par Nicolas Garnier",//
+				"Salle Belem (hangout)",//
+				ConstantsUtil.SESSION_CLOUD4,//
+				"fr",//
+				"101"));
+		panel.add(this.createSessionDesc("Chrome Extensions & OAuth2",//
+				"par Thibault Pouget",//
+				"Salle Belem",//
+				ConstantsUtil.SESSION_CLOUD5,//
+				"fr",//
+				"101"));
+		panel.add(this.createSessionDesc("Trucs et astuces pour le Cloud",//
+				"par Didier Girard",//
+				"Salle Titan",//
+				ConstantsUtil.SESSION_CLOUD6,//
+				"fr",//
+				"101"));
+	}
+
+	private void createCarouselSessionCodelab( //
+			Carousel carousel) {
+		FlowPanel panel = this.createCarousel(carousel);
+		panel.add(this.createSessionDesc("Le président est ...",//
+				"par Ludovic Champenois et Martin Görner",//
+				"Salle Les Machines",//
+				ConstantsUtil.SESSION_CLOUD3,//
+				"fr",//
+				"101"));
 
 		panel.add(this.createSessionDesc("Android Bootstrap",//
 				"par Jean-François Garreau",//
@@ -97,6 +215,7 @@ public class SessionViewGwtImpl implements SessionView {
 				ConstantsUtil.SESSION_ANDROID1,//
 				"fr",//
 				"202"));
+
 	}
 
 	private FlowPanel createCarousel( //
@@ -105,7 +224,6 @@ public class SessionViewGwtImpl implements SessionView {
 		ScrollPanel scrollPanel2 = new ScrollPanel();
 
 		// Agenda de la salle
-		flowPanel3.add(addRoundPanel("TOTOTOTOTOTOTOTOOTOTO"));
 		scrollPanel2.setWidget(flowPanel3);
 
 		// Add page to carousel
@@ -118,9 +236,10 @@ public class SessionViewGwtImpl implements SessionView {
 		StringBuilder str = new StringBuilder();
 		str.append("").append(type);
 		str.append(" (").append(lang).append(")");
-		str.append(" <bold>").append(title).append("</bold> ").append(author);
-		str.append(" : <em>").append(salle).append("</em>");
-		str.append("<br/>").append(description);
+		str.append(" <bold>").append(title);
+		str.append("</bold><br/><em>").append(author);
+		str.append(" : ").append(salle).append("</em>");
+		str.append("<br/><small>").append(description).append("</small>");
 		return this.addRoundPanel(str.toString());
 	}
 

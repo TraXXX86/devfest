@@ -19,9 +19,10 @@
 <!-- 	 
 	<extend-property name="mgwt.os" values="android_tablet, android" />
 	<extend-property name="mgwt.os" values="android" /> 
+<set-property name="mgwt.os" value="iphone" />
 -->
 <!-- 	<extend-property name="mgwt.os" values="iphone" /> -->
-<set-property name="mgwt.os" value="iphone" />
+<set-property name="mgwt.os" value="android" />
 
 	<!-- here you can turn off css obfuscation -->
 	<!--<set-configuration-property name="mgwt.css" value="pretty" /> -->

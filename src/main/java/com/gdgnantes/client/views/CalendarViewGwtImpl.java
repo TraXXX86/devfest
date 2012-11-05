@@ -6,6 +6,8 @@ package com.gdgnantes.client.views;
 import com.gdgnantes.client.cst.ConstantsUtil;
 import com.google.gwt.dom.client.Style.Unit;
 import com.google.gwt.event.logical.shared.HasSelectionHandlers;
+import com.google.gwt.event.logical.shared.SelectionEvent;
+import com.google.gwt.event.logical.shared.SelectionHandler;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.Widget;
 import com.googlecode.mgwt.dom.client.event.tap.HasTapHandlers;
@@ -41,6 +43,26 @@ public class CalendarViewGwtImpl implements CalendarView {
 		main.add(headerPanel);
 
 		carousel = new Carousel();
+		carousel.addSelectionHandler(new SelectionHandler<Integer>() {
+
+			@Override
+			public void onSelection(SelectionEvent<Integer> event) {
+				if (event.getSelectedItem() == 0) {
+					setTitle(ConstantsUtil.CALENDAR_SALLE + " "
+							+ ConstantsUtil.CALENDAR_SALLE_1);
+				} else if (event.getSelectedItem() == 1) {
+					setTitle(ConstantsUtil.CALENDAR_SALLE + " "
+							+ ConstantsUtil.CALENDAR_SALLE_2);
+				} else if (event.getSelectedItem() == 2) {
+					setTitle(ConstantsUtil.CALENDAR_SALLE + " "
+							+ ConstantsUtil.CALENDAR_SALLE_3);
+				} else if (event.getSelectedItem() == 3) {
+					setTitle(ConstantsUtil.CALENDAR_SALLE + " "
+							+ ConstantsUtil.CALENDAR_SALLE_4);
+				}
+
+			}
+		});
 
 		main.add(carousel);
 
@@ -185,7 +207,6 @@ public class CalendarViewGwtImpl implements CalendarView {
 		RoundPanel flowPanel3 = new RoundPanel();
 
 		// Titre de la page du carousel
-		flowPanel3.add(createSlide(ConstantsUtil.CALENDAR_SALLE + roomName));
 
 		// Agenda de la salle
 		flowPanel3.add(createSlide(ConstantsUtil.CALENDAR_HUIT_A_NEUF, huit));

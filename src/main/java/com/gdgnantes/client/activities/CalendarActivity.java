@@ -35,23 +35,26 @@ public class CalendarActivity extends MGWTAbstractActivity {
 	}
 
 	@Override
-	public void start(AcceptsOneWidget panel, com.google.gwt.event.shared.EventBus eventBus) {
+	public void start(AcceptsOneWidget panel,
+			com.google.gwt.event.shared.EventBus eventBus) {
 		final CalendarView view = clientFactory.getCalendarView();
 
 		// Ajout du titre principal
-		view.setTitle(ConstantsUtil.MENU_CALENDAR);
+		// view.setTitle(ConstantsUtil.MENU_CALENDAR);
 
 		// Ajout du label du bouton de retour
 		view.setBackButtonText(ConstantsUtil.HEADER_BACK);
 
 		// Ajout de la place pour le bouton de retour
-		addHandlerRegistration(view.getBackButton().addTapHandler(new TapHandler() {
-			@Override
-			public void onTap(TapEvent event) {
-				clientFactory.getPlaceController().goTo(new HomePlace());
-				return;
-			}
-		}));
+		addHandlerRegistration(view.getBackButton().addTapHandler(
+				new TapHandler() {
+					@Override
+					public void onTap(TapEvent event) {
+						clientFactory.getPlaceController()
+								.goTo(new HomePlace());
+						return;
+					}
+				}));
 
 		panel.setWidget(view);
 	}

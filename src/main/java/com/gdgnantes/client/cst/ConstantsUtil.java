@@ -63,34 +63,34 @@ public class ConstantsUtil {
 	public static final String CALENDAR_DIX_SEPT_A_DIX_HUIT = "17h10 - 18h00";
 	public static final String CALENDAR_DIX_NEUF = "19h30 - 00h00";
 
-	public static final String CALENDAR_SALLE_X_ACTIVITY_1 = "Ouverture des portes<br/>Café / Croissants";
-	public static final String CALENDAR_SALLE_X_ACTIVITY_2 = "Keynote<br/>Amphi";
-	public static final String CALENDAR_SALLE_X_ACTIVITY_3 = "Repas du midi<br/>Tour LU";
-	public static final String CALENDAR_SALLE_X_ACTIVITY_4 = "Pause / Goûter<br/>Tour LU";
+	public static final String CALENDAR_SALLE_X_ACTIVITY_1 = "Ouverture des portes<br/><em>Café / Croissants</em>";
+	public static final String CALENDAR_SALLE_X_ACTIVITY_2 = "Keynote<br/><em>Amphi</em>";
+	public static final String CALENDAR_SALLE_X_ACTIVITY_3 = "Repas du midi<br/><em>Tour LU</em>";
+	public static final String CALENDAR_SALLE_X_ACTIVITY_4 = "Pause / Goûter<br/><em>Tour LU</em>";
 	public static final String CALENDAR_SALLE_X_ACTIVITY_5 = "Pitch Sessions /  Démos / Discussions libres";
-	public static final String CALENDAR_SALLE_X_ACTIVITY_6 = "After Party \"Sounderbox\"<br/>Melting Potes";
+	public static final String CALENDAR_SALLE_X_ACTIVITY_6 = "After Party \"Sounderbox\"<br/><em>Melting Potes</em>";
 
-	public static final String CALENDAR_SALLE_1_ACTIVITY_1 = "Sécurité Android<br/>Salle Titan";
-	public static final String CALENDAR_SALLE_1_ACTIVITY_2 = "Android & NFC<br/>Salle Graslin";
-	public static final String CALENDAR_SALLE_1_ACTIVITY_3 = "Google TV<br/>Salle Graslin";
-	public static final String CALENDAR_SALLE_1_ACTIVITY_4 = "Wifi 2P2<br/>Salle Graslin";
-	public static final String CALENDAR_SALLE_1_ACTIVITY_5 = "Présentation de RoboSpice<br/>Salle Belem";
+	public static final String CALENDAR_SALLE_1_ACTIVITY_1 = "Sécurité Android<br/><em>Salle Titan</em>";
+	public static final String CALENDAR_SALLE_1_ACTIVITY_2 = "Android & NFC<br/><em>Salle Graslin</em>";
+	public static final String CALENDAR_SALLE_1_ACTIVITY_3 = "Google TV<br/><em>Salle Graslin</em>";
+	public static final String CALENDAR_SALLE_1_ACTIVITY_4 = "Wifi 2P2<br/><em>Salle Graslin</em>";
+	public static final String CALENDAR_SALLE_1_ACTIVITY_5 = "Présentation de RoboSpice<br/><em>Salle Belem</em>";
 
-	public static final String CALENDAR_SALLE_2_ACTIVITY_1 = "Big Data & HTML5<br/>Salle Graslin";
-	public static final String CALENDAR_SALLE_2_ACTIVITY_2 = "GWT Offline & HTML5<br/>Salle Titan";
-	public static final String CALENDAR_SALLE_2_ACTIVITY_3 = "Angular JS<br/>Salle Titan";
-	public static final String CALENDAR_SALLE_2_ACTIVITY_4 = "HTML5 Offline<br/>Salle Belem";
-	public static final String CALENDAR_SALLE_2_ACTIVITY_5 = "Dart<br/>Salle Graslin";
+	public static final String CALENDAR_SALLE_2_ACTIVITY_1 = "Big Data & HTML5<br/><em>Salle Graslin</em>";
+	public static final String CALENDAR_SALLE_2_ACTIVITY_2 = "GWT Offline & HTML5<br/><em>Salle Titan</em>";
+	public static final String CALENDAR_SALLE_2_ACTIVITY_3 = "Angular JS<br/><em>Salle Titan</em>";
+	public static final String CALENDAR_SALLE_2_ACTIVITY_4 = "HTML5 Offline<br/><em>Salle Belem</em>";
+	public static final String CALENDAR_SALLE_2_ACTIVITY_5 = "Dart<br/><em>Salle Graslin</em>";
 
-	public static final String CALENDAR_SALLE_3_ACTIVITY_1 = "Google Cloud EndPoints<br/>Salle Belem";
-	public static final String CALENDAR_SALLE_3_ACTIVITY_2 = "Chrome Extensions & OAuth2<br/>Salle Belem";
-	public static final String CALENDAR_SALLE_3_ACTIVITY_3 = "Drive SDK<br/>Salle Belem";
-	public static final String CALENDAR_SALLE_3_ACTIVITY_4 = "AppEngine & ComputeEngine<br/>Salle Titan";
-	public static final String CALENDAR_SALLE_3_ACTIVITY_5 = "Trucs et astuces du Cloud<br/>Salle Titan";
+	public static final String CALENDAR_SALLE_3_ACTIVITY_1 = "Google Cloud EndPoints<br/><em>Salle Belem</em>";
+	public static final String CALENDAR_SALLE_3_ACTIVITY_2 = "Chrome Extensions & OAuth2<br/><em>Salle Belem</em>";
+	public static final String CALENDAR_SALLE_3_ACTIVITY_3 = "Drive SDK<br/><em>Salle Belem</em>";
+	public static final String CALENDAR_SALLE_3_ACTIVITY_4 = "AppEngine & ComputeEngine<br/><em>Salle Titan</em>";
+	public static final String CALENDAR_SALLE_3_ACTIVITY_5 = "Trucs et astuces du Cloud<br/><em>Salle Titan</em>";
 
-	public static final String CALENDAR_SALLE_4_ACTIVITY_1 = "Le président est ... (Atelier AppEngine)<br/>Salle Les Machines";
-	public static final String CALENDAR_SALLE_4_ACTIVITY_2 = "Android BootStrap<br/>Salle Les Machines";
-	public static final String CALENDAR_SALLE_4_ACTIVITY_3 = "Présentation BeMyApp<br/>Salle Les Machines";
+	public static final String CALENDAR_SALLE_4_ACTIVITY_1 = "Le président est ... (Atelier AppEngine)<br/><em>Salle Les Machines</em>";
+	public static final String CALENDAR_SALLE_4_ACTIVITY_2 = "Android BootStrap<br/><em>Salle Les Machines</em>";
+	public static final String CALENDAR_SALLE_4_ACTIVITY_3 = "Présentation BeMyApp<br/><em>Salle Les Machines</em>";
 
 	// ################################################################
 	// ############################ Speakers constants
@@ -187,8 +187,24 @@ public class ConstantsUtil {
 
 	public static final String SPEAKER_DGD_NAME = "Didier Girard";
 	public static final String SPEAKER_DGD_GGPLUS = "https://plus.google.com/u/0/115263933340916245640/about";
-	public static final String SPEAKER_DGD_DESCRIPTION = "  Directeur des Operations et de L'innovation chez SFEIR, Didier Girard est Docteur en Informatique de l'ENS Lyon. Il aime acquérir des connaissances et les partager. Toujours à la recherche de technologies qui va s'imposer sur le marché dans les années à venir, il travaille sur des projets mettant en oeuvre le Cloud Computing depuis 2008.<br />";
+	public static final String SPEAKER_DGD_DESCRIPTION = "  Directeur des Opérations et de L'innovation chez SFEIR, Didier Girard est Docteur en Informatique de l'ENS Lyon. Il aime acquérir des connaissances et les partager. Toujours à la recherche de technologies qui va s'imposer sur le marché dans les années à venir, il travaille sur des projets mettant en oeuvre le Cloud Computing depuis 2008.<br />";
 
 	public static final String SESSION_ANDROID1 = "L'objectif de cet atelier est mettre en avant les bonnes pratiques liés à l'utilisation des librairies android, quelles librairies utiliser ? Comment les faires marcher ensemble. Nous reviendrons aussi sur des projets comme \"Android Bootstrap\" et \"Android KickStartR\"  : des projets incluant les Fragments, Fragment Pager, Account Manager, android-maven-plugin, RoboGuice 2, ActionBarSherlock 4, ViewPagerIndicator, http-request, GSON, Robotium ... ";
+	public static final String SESSION_ANDROID2 = "Architecture, risque pour les applications, puis exploitation du modèle pour pouvoir ajouter un privilège à chaud à une application.";
+	public static final String SESSION_ANDROID3 = "La plupart des apps mobiles font appel à des services via le réseau (ex: services REST). Afin de ne pas bloquer l'interface graphique, ces requêtes sont exécutées de manière asynchrone. Ces derniers temps, plusieurs librairies sont apparues pour faciliter l'écriture de ces requêtes (RestClient de Android Annotations, ou encore Spring Android). Cependant, s'il est plus simple de transformer les résultats de requêtes en POJO, il n'existe pas de solution simple et robuste pour écrire des requêtes asynchrones. Les AsyncTask entraînent facilement des fuites importantes de mémoire tandis que les Loaders ne sont pas adaptés à l'écriture de requêtes réseau mais plutôt aux Cursor des BD SQLite. RoboSpice propose une solution novatrice : exécuter les requêtes dans un Service Android et déposer automatiquement les données en cache.";
+	public static final String SESSION_ANDROID4 = "La technologie NFC est récemment devenue très convoitée. Ce n'est pourtant pas un nouveau précepte... Créée en 2004 par le NFC Forum, la norme est dérivée du RFID (Radio Frequency IDentification) qui a près de 30 ans. Mais l'intégration de la technologie au sein des appareils Android (+ de 50% du marché des smartphones) relance tout l'intérêt du NFC. Outre le paiement sans contact, les possibilités offertes par le NFC sont multiples : Offrir une expérience utilisateur interactive (au musée en face d'une oeuvre d'art, dans un arrêt de bus pour les horaires, une affiche publicitaire pour indiquer le magasin le plus proche, etc.), Authentification et ticketing (transports publiques, concerts, verrouillage de portes, cartes de fidélité), déclencher des actions automatiques (appels d'urgence, envois de sms, appariement Bluetooth ou Wifi). Cette conférence sera l'occasion de présenter le fonctionnement du NFC et son implémentation dans Android. La séance sera agrémentée de démonstrations qui illustreront différents cas d'usages.";
+	public static final String SESSION_ANDROID5 = "Le Wifi Direct a été introduit dans Android ICS. Après une rapide présentation, nous verrons comment s'en servir afin de se libérer de la centralisation. Au programme: découverte de services, peer to peer, et file-sharing.";
+	public static final String SESSION_ANDROID6 = "GoogleTV propose un système Android différent auquel le développeur doit s'adapter pour se démarquer. Nous verrons ses qualités, ses faiblesses et tout ce qu'il faut savoir avant de déployer vos applications. Nous étudierons notamment les divers patterns de navigation adaptés aux grands écrans et n'ayant pas d'interactions tactiles. Enfin, il sera possible d'échanger sur l'intérêt d'un tel système en France, et sur son avenir.";
+	public static final String SESSION_WEB1 = "Découvrez Dart, le nouveau langage proposé par Google. Son objectif est de permettre de développer des applications web modernes. Alternatif à Javascript, Dart s'exécute dans une machine virtuelle aussi bien du coté client que serveur. Cette session présente les bases du langage que nous appliquerons via un live coding.";
+	public static final String SESSION_WEB2 = "Enter into the power of HTML5 Apis. Understand how works modern Web Apps. Introduction of Google Cloud EndPoints and BigQuery !";
+	public static final String SESSION_WEB3 = "Session de découverte présentant les éléments nécessaires à la réalisation d'applications web accessibles hors connexion. Bénéficiez d'un retour d'expérience concret pour rendre vos applications tolérantes aux coupures réseau.";
+	public static final String SESSION_WEB4 = "What if you could write modern web apps with dramatically fewer lines of code and improve its readability and expressiveness at the same time? No, there’s no new language to learn. Just familiar old HTML and JavaScript. As a matter of fact, there’s some stuff for you to un-learn. AngularJS is a client-side JavaScript web development framework where we believe we’ve done something special. We’ve approached the problem let’s say differently from the way any other JavaScript tool has before. Instead of asking what kind of functions we could provide to make writing apps smoother, we asked \"what if the browser worked differently in a way that eliminates code and gives structure to apps?\" ";
+	public static final String SESSION_WEB5 = "Après une brève présentation de GWT (Google Web Toolkit), l'objectif de cette session est de vous démontrer ses qualités pour implémenter des applications Web Offline fonctionnant avec les standards HTML 5 AppCache et LocalStorage. Nous étudierons les problématiques de chargement des ressources en mode déconnecté mais aussi toute la problématique de synchronisation avec le serveur une fois connecté. Le tout en mode multi-canal (mobile, tablettes, navigateurs, ...) et sans installer de plugin ou de machine virtuelle. Une stratégie pour éviter les développements multiples d'applications natives pour les terminaux du marché.";
+	public static final String SESSION_CLOUD1 = "Session plutôt informelle sous forme de Q/A. Ludovic prendra le soin de nous introduire la vie d'ingénieur chez Google tout en nous montrant les dernières nouveautés dans Google AppEngine (avec ses 11 releases par an et donc beaucoup de changements). Enfin, une introduction suivie d'une démonstration sera faite sur Compute Engine, la nouvelle infrastructure sur le cloud proposée par Google permettant de livrer des milliers et des milliers de cœurs processeur à des applications et services exploitant de lourdes données.";
+	public static final String SESSION_CLOUD2 = "Présenté lors du Google IO 2012, Google Cloud Endpoints permet de créer plus simplement et rapidement des APIs REST sur Google App Engine. Il devient par conséquent plus facile de centraliser votre logique métier, vos calculs... pour vos applications clientes Android, iOS et Web, et de bénéficier de l'infrastructure de Google App Engine et des APIs Google. Google Cloud Endpoints s'appuie sur la même infrastructure que celle utilisée par Google pour ses propres API. Lors de cette session, vous verrez comment mettre en oeuvre rapidement Google Cloud Endpoints (via Eclipse ou en mode commande) puis consommer les APIs REST à travers des clients Java (Android, Servlet) et Web (Javascript). L'application de démonstration de \"Réservations d'Hôtels\" sera l'occasion de montrer un exemple concret d'utilisation de Google Cloud Endpoints et de son intégration avec les APIs Google et le protocole OAuth2.";
+	public static final String SESSION_CLOUD3 = "Codelab sur la mise en oeuvre d'une application AppEngine pouvant tenir une charge de 50 millions d'utilisateurs avec un pic à 2 millions d'utilisateurs. Ludovic et Martin reviendront sur les conseils, les pièges et les bonnes pratiques de la mise en oeuvre d'une telle application.";
+	public static final String SESSION_CLOUD4 = "Google Drive SDK permet de créer des interconnexions entre Drive et des logiciels tiers sous Android et iOS. Ils pourront utiliser différentes les fonctions de lecture et d'écriture de manière sécurisée, tout comme « ouvrir avec » depuis un terminal mobile. Il sera alors possible d'éditer du contenu présent sur l'espace de stockage. De plus, une nouvelle fonctionnalité de partage simplifié de documents est ajoutée via quelques lignes de Javascript.";
+	public static final String SESSION_CLOUD5 = "OAuth 2.0 apporte un nombre non négligeable de modifications par rapport à sa précédente version. Son utilisation au sein d'extensions Chrome peut s'avérer plus compliquée. Aussi, après un tour d'horizon de cette nouvelle version, nous ferons une initiation aux extensions Chrome en utilisant OAuth 2.0 pour s'authentifier aux APIs Google. Cette session s'adresse surtout aux débutants.";
+	public static final String SESSION_CLOUD6 = "";
 
 }

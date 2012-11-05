@@ -126,8 +126,7 @@ public class MenuListActivity extends MGWTAbstractActivity {
 		list.add(new Topic(ConstantsUtil.MENU_CALENDAR_ROOM, 5));
 		list.add(new Topic(ConstantsUtil.MENU_SPEAKERS, 5));
 		list.add(new Topic(ConstantsUtil.MENU_SESSIONS, 5));
-		list.add(new Topic(ConstantsUtil.MENU_PARTNERS, 5));
-		list.add(new Topic(ConstantsUtil.MENU_FAQ, 5));
+		// list.add(new Topic(ConstantsUtil.MENU_PARTNERS, 5));
 		return list;
 	}
 
