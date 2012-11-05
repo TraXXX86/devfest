@@ -9,6 +9,9 @@ public interface ImgBundle extends ClientBundle {
 
 	public static final ImgBundle INSTANCE = GWT.create(ImgBundle.class);
 
+	@Source("resources/devFestLogo.gif")
+	ImageResource devfest();
+
 	@Source("resources/ngr.png")
 	@ImageOptions(height = 75, width = 75)
 	ImageResource ngr();

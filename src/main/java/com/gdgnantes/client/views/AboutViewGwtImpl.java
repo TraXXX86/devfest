@@ -4,7 +4,9 @@
 package com.gdgnantes.client.views;
 
 import com.gdgnantes.client.cst.ConstantsUtil;
+import com.gdgnantes.client.cst.img.ImgBundle;
 import com.google.gwt.user.client.ui.HTML;
+import com.google.gwt.user.client.ui.Image;
 import com.google.gwt.user.client.ui.Widget;
 import com.googlecode.mgwt.dom.client.event.tap.HasTapHandlers;
 import com.googlecode.mgwt.ui.client.MGWT;
@@ -38,12 +40,16 @@ public class AboutViewGwtImpl implements AboutView {
 		// Create Main Panel
 		LayoutPanel mainScrollPanel = new LayoutPanel();
 
-		mainScrollPanel.add(new HTML(ConstantsUtil.HTML_IMG_LOGO));
+		Image imgdev = new Image(ImgBundle.INSTANCE.devfest());
+		imgdev.addStyleName("devfestimage");
+		mainScrollPanel.addStyleName("center");
+		// mainScrollPanel.add(imgdev);
 
 		RoundPanel round = new RoundPanel();
 
 		mainScrollPanel.add(round);
 
+		round.add(imgdev);
 		round.add(new HTML(ConstantsUtil.ABOUT_BODY));
 
 		main.add(mainScrollPanel);

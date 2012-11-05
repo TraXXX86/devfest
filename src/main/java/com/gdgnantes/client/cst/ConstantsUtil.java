@@ -10,12 +10,6 @@ package com.gdgnantes.client.cst;
 public class ConstantsUtil {
 
 	// ################################################################
-	// ############################ HTML constants
-	// ################################################################
-	public static final String HTML_IMG_LOGO = "<center><img src=\"./images/devFestLogo.gif\"/></center>";
-	public static final String HTML_IMG_LOGO_WITH_BR = "<center><br><img src=\"./images/devFestLogo.gif\"/></center>";
-
-	// ################################################################
 	// ############################ Header constants
 	// ################################################################
 	public static final String HEADER_DEVFEST_2012 = "DevFest 2012";
@@ -25,7 +19,7 @@ public class ConstantsUtil {
 	// ################################################################
 	// ############################ About constants
 	// ################################################################
-	public static final String ABOUT_BODY = "<br/> <center>Site du DevFest Nantes 2012</center> <br/><a target='_blank' href='http://devfest.gdgnantes.com'>http://devfest.gdgnantes.com</a><br/><br/><center>Site du GDG Nantes</center><br/><a target='_blank' href='http://www.gdgnantes.com/'>http://www.gdgnantes.com/</a><br/><br/>";
+	public static final String ABOUT_BODY = "<br/>Site du DevFest Nantes 2012 <br/><a target='_blank' href='http://devfest.gdgnantes.com'>http://devfest.gdgnantes.com</a><br/><br/>Site du GDG Nantes<br/><a target='_blank' href='http://www.gdgnantes.com/'>http://www.gdgnantes.com/</a><br/><br/><br/><br/>Appli réalisée par :<br/>Maxime Jaouen et Julien Landuré<br/>et disponible sur <a target='_blank' href=\"https://github.com/TraXXX86/devfest\">github</a>";
 
 	// ################################################################
 	// ############################ Menu constants
@@ -167,7 +161,7 @@ public class ConstantsUtil {
 
 	public static final String SPEAKER_MGU_NAME = "Maxime Gréau";
 	public static final String SPEAKER_MGU_GGPLUS = "https://plus.google.com/u/0/118230138066120295920/about";
-	public static final String SPEAKER_MGU_DESCRIPTION = " est architecte JEE depuis de nombreuses années. Il est l'auteur du livre \"Apache Maven - Maitrisez l'infrastructure d'un projet Java EE\".<br />";
+	public static final String SPEAKER_MGU_DESCRIPTION = " s'est forgé depuis 10 ans une expérience autour des technologies Java et du Web grâce aux SSII de la région nantaise. Aujourd'hui Architecte Technique au sein du Service des Retraites de l'Etat à Nantes, il est également l'auteur d'un livre sur Apache Maven publié en 2011. Il fait partie de la communauté de développeurs qui participent aux tests de Google Cloud Endpoints avant sa sortie officielle.<br />";
 
 	public static final String SPEAKER_ARD_NAME = "Antoine Richard";
 	public static final String SPEAKER_ARD_GGPLUS = "https://plus.google.com/u/0/103932114865279499816/about";

@@ -84,14 +84,14 @@ public class SessionViewGwtImpl implements SessionView {
 
 		panel.add(this.createSessionDesc("Sécurité Android",//
 				"par Philippe Prados",//
-				"Salle Titan",//
+				"Salle Titan de 10h10 à 11h10",//
 				ConstantsUtil.SESSION_ANDROID2,//
 				"fr",//
 				"101"));
 
 		panel.add(this.createSessionDesc("Présentation de RoboSpice",//
 				"par Stéphane Nicolas",//
-				"Salle Belem",//
+				"Salle Belem de 16h00 à 17h00",//
 				ConstantsUtil.SESSION_ANDROID3,//
 				"fr",//
 				"202"));
@@ -100,21 +100,21 @@ public class SessionViewGwtImpl implements SessionView {
 				.createSessionDesc(
 						"Android NFC pour Nouvelle Façon de Communiquer avec nos Mobiles ?",//
 						"par Guillaume Gerbaud",//
-						"Salle Graslin",//
+						"Salle Graslin de 11h20 à 12h20",//
 						ConstantsUtil.SESSION_ANDROID4,//
 						"fr",//
 						"202"));
 
 		panel.add(this.createSessionDesc("Wifi P2P",//
 				"par Frédéric Berthéléry",//
-				"Salle Graslin",//
+				"Salle Graslin de 14h40 à 15h40",//
 				ConstantsUtil.SESSION_ANDROID5,//
 				"fr",//
 				"202"));
 
 		panel.add(this.createSessionDesc("Android in your TV",//
 				"par Olivier Gonthier",//
-				"Salle Graslin",//
+				"Salle Graslin de 13h30 à 14h30",//
 				ConstantsUtil.SESSION_ANDROID6,//
 				"fr",//
 				"202"));
@@ -126,21 +126,21 @@ public class SessionViewGwtImpl implements SessionView {
 		FlowPanel panel = this.createCarousel(carousel);
 		panel.add(this.createSessionDesc("Dart",//
 				"par Nicolas François et Guillaume Girou",//
-				"Salle Graslin",//
+				"Salle Graslin de 16h00 à 17h00",//
 				ConstantsUtil.SESSION_WEB1,//
 				"fr",//
 				"101"));
 
 		panel.add(this.createSessionDesc("Big Data & HTML5",//
 				"par Ido Green",//
-				"Salle Graslin (hangout)",//
+				"Salle Graslin (hangout) de 10h10 à 11h10",//
 				ConstantsUtil.SESSION_WEB2,//
 				"en",//
 				"202"));
 
 		panel.add(this.createSessionDesc("HTML5 et le mode déconnecté",//
 				"par Antoine Richard",//
-				"Salle Belem",//
+				"Salle Belem de 14h40 à 15h40",//
 				ConstantsUtil.SESSION_WEB3,//
 				"fr",//
 				"101"));
@@ -148,7 +148,7 @@ public class SessionViewGwtImpl implements SessionView {
 		panel.add(this.createSessionDesc(
 				"Building awesome client-side web apps with AngularJS",//
 				"par Vojta Jina",//
-				"Salle Titan",//
+				"Salle Titan de 13h30 à 14h30",//
 				ConstantsUtil.SESSION_WEB4,//
 				"en",//
 				"101"));
@@ -156,7 +156,7 @@ public class SessionViewGwtImpl implements SessionView {
 		panel.add(this.createSessionDesc(
 				"Développer une application Web Offline avec GWT et HTML5 ",//
 				"par Sami Jaber",//
-				"Salle Titan",//
+				"Salle Titan de 11h20 à 12h20",//
 				ConstantsUtil.SESSION_WEB5,//
 				"fr",//
 				"202"));
@@ -168,32 +168,32 @@ public class SessionViewGwtImpl implements SessionView {
 		FlowPanel panel = this.createCarousel(carousel);
 		panel.add(this.createSessionDesc("App Engine et Compute Engine",//
 				"par Ludovic Champenois",//
-				"Salle Titan",//
+				"Salle Titan de 14h40 à 15h40",//
 				ConstantsUtil.SESSION_CLOUD1,//
 				"fr",//
 				"202"));
 		panel.add(this.createSessionDesc("Google Cloud EndPoints",//
 				"par Maxime Gréau",//
-				"Salle Belem",//
+				"Salle Belem de 10h10 à 11h10",//
 				ConstantsUtil.SESSION_CLOUD2,//
 				"fr",//
 				"202"));
 
 		panel.add(this.createSessionDesc("Google Drive SDK",//
 				"par Nicolas Garnier",//
-				"Salle Belem (hangout)",//
+				"Salle Belem (hangout) de 13h30 à 14h30",//
 				ConstantsUtil.SESSION_CLOUD4,//
 				"fr",//
 				"101"));
 		panel.add(this.createSessionDesc("Chrome Extensions & OAuth2",//
 				"par Thibault Pouget",//
-				"Salle Belem",//
+				"Salle Belem de 11h20 à 12h20",//
 				ConstantsUtil.SESSION_CLOUD5,//
 				"fr",//
 				"101"));
 		panel.add(this.createSessionDesc("Trucs et astuces pour le Cloud",//
 				"par Didier Girard",//
-				"Salle Titan",//
+				"Salle Titan de 16h00 à 17h00",//
 				ConstantsUtil.SESSION_CLOUD6,//
 				"fr",//
 				"101"));
@@ -204,14 +204,14 @@ public class SessionViewGwtImpl implements SessionView {
 		FlowPanel panel = this.createCarousel(carousel);
 		panel.add(this.createSessionDesc("Le président est ...",//
 				"par Ludovic Champenois et Martin Görner",//
-				"Salle Les Machines",//
+				"Salle Les Machines de 10h10 à 12h20",//
 				ConstantsUtil.SESSION_CLOUD3,//
 				"fr",//
 				"101"));
 
 		panel.add(this.createSessionDesc("Android Bootstrap",//
 				"par Jean-François Garreau",//
-				"Salle Les Machines",//
+				"Salle Les Machines de 13h30 à 15h40",//
 				ConstantsUtil.SESSION_ANDROID1,//
 				"fr",//
 				"202"));
