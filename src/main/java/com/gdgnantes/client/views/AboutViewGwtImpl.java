@@ -5,6 +5,7 @@ package com.gdgnantes.client.views;
 
 import com.gdgnantes.client.cst.ConstantsUtil;
 import com.gdgnantes.client.cst.img.ImgBundle;
+import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.Image;
 import com.google.gwt.user.client.ui.Widget;
@@ -13,7 +14,7 @@ import com.googlecode.mgwt.ui.client.MGWT;
 import com.googlecode.mgwt.ui.client.widget.HeaderButton;
 import com.googlecode.mgwt.ui.client.widget.HeaderPanel;
 import com.googlecode.mgwt.ui.client.widget.LayoutPanel;
-import com.googlecode.mgwt.ui.client.widget.RoundPanel;
+import com.googlecode.mgwt.ui.client.widget.ScrollPanel;
 
 /**
  * @author majaouen
@@ -39,18 +40,19 @@ public class AboutViewGwtImpl implements AboutView {
 
 		// Create Main Panel
 		LayoutPanel mainScrollPanel = new LayoutPanel();
+		mainScrollPanel.addStyleName("center");
 
+		FlowPanel flowLayout = new FlowPanel();
 		Image imgdev = new Image(ImgBundle.INSTANCE.devfest());
 		imgdev.addStyleName("devfestimage");
-		mainScrollPanel.addStyleName("center");
-		// mainScrollPanel.add(imgdev);
+		flowLayout.add(imgdev);
+		flowLayout.add(new HTML(ConstantsUtil.ABOUT_BODY));
 
-		RoundPanel round = new RoundPanel();
-
-		mainScrollPanel.add(round);
-
-		round.add(imgdev);
-		round.add(new HTML(ConstantsUtil.ABOUT_BODY));
+		// Create and add Menu scroll panel
+		ScrollPanel scrollPanel = new ScrollPanel();
+		scrollPanel.setWidget(flowLayout);
+		scrollPanel.setScrollingEnabledX(false);
+		mainScrollPanel.add(scrollPanel);
 
 		main.add(mainScrollPanel);
 
