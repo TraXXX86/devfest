@@ -40,8 +40,7 @@ public class SpeakersActivity extends MGWTAbstractActivity {
 	private boolean isInit = false;
 
 	@Override
-	public void start(AcceptsOneWidget panel,
-			com.google.gwt.event.shared.EventBus eventBus) {
+	public void start(AcceptsOneWidget panel, com.google.gwt.event.shared.EventBus eventBus) {
 		SpeakersView view = clientFactory.getSpeakersView();
 
 		// Ajout du titre principal
@@ -51,15 +50,13 @@ public class SpeakersActivity extends MGWTAbstractActivity {
 		view.setBackButtonText(ConstantsUtil.HEADER_BACK);
 
 		// Ajout de la place pour le bouton de retour
-		addHandlerRegistration(view.getBackButton().addTapHandler(
-				new TapHandler() {
-					@Override
-					public void onTap(TapEvent event) {
-						clientFactory.getPlaceController()
-								.goTo(new HomePlace());
-						return;
-					}
-				}));
+		addHandlerRegistration(view.getBackButton().addTapHandler(new TapHandler() {
+			@Override
+			public void onTap(TapEvent event) {
+				clientFactory.getPlaceController().goTo(new HomePlace());
+				return;
+			}
+		}));
 
 		if (!view.isInit()) {
 			view.addSpeakerDescription(createSpeakerDescription(//
@@ -176,17 +173,27 @@ public class SpeakersActivity extends MGWTAbstractActivity {
 		panel.setWidget(view);
 	}
 
-	private String createSpeakerDescription(String speakerName,
-			String speakerDescription, String ggplusUrl,
-			ImageResource speakerImg) {
+	private String createSpeakerDescription(String speakerName, String speakerDescription, String ggplusUrl, ImageResource speakerImg) {
 		StringBuilder builder = new StringBuilder();
 		builder.append(ConstantsUtil.SPEAKER_1);
 		// builder.append(ggplusUrl);
 		// builder.append(ConstantsUtil.SPEAKER_2);
 		// builder.append(speakerName);
 		// builder.append(ConstantsUtil.SPEAKER_3);
+		// System.out.println(speakerImg.getSafeUri().asString());
+		// System.out.println(speakerImg.getHeight());
 		Image img = new Image(speakerImg);
+		// System.out.println(img.getStyleName());
+		// System.out.println(img.getStylePrimaryName());
+		// String urlImg = StringUtils.replace(img.getAltText(), "0px", "75px");
+		// AbstractImagePrototype test = AbstractImagePrototype.create(speakerImg);
+		// img.setPixelSize(75, speakerImg.getHeight() * 75 / speakerImg.getWidth());
+		// System.out.println(test.getHTML());
+		// System.out.println(img);
 		// img.setPixelSize(75, 75);
+		// System.out.println(img);
+		// img.setSize("75px", "75px");
+		// System.out.println(img);
 		// img.setLayoutData(new Layout)
 		// tHeight("75px");
 		// img.setWidth("75px");
