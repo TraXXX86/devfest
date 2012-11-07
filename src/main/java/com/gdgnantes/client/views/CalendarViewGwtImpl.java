@@ -104,8 +104,8 @@ public class CalendarViewGwtImpl implements CalendarView {
 				ConstantsUtil.CALENDAR_SALLE_2,//
 				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_1,//
 				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_2,//
-				ConstantsUtil.CALENDAR_SALLE_2_ACTIVITY_1,//
 				ConstantsUtil.CALENDAR_SALLE_2_ACTIVITY_2,//
+				ConstantsUtil.CALENDAR_SALLE_2_ACTIVITY_1,//
 				ConstantsUtil.CALENDAR_SALLE_X_ACTIVITY_3,//
 				ConstantsUtil.CALENDAR_SALLE_2_ACTIVITY_3,//
 				ConstantsUtil.CALENDAR_SALLE_2_ACTIVITY_4,//

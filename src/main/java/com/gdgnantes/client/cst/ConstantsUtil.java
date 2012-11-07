@@ -70,8 +70,8 @@ public class ConstantsUtil {
 	public static final String CALENDAR_SALLE_1_ACTIVITY_4 = "Wifi 2P2<br/><em>Salle Graslin</em>";
 	public static final String CALENDAR_SALLE_1_ACTIVITY_5 = "Présentation de RoboSpice<br/><em>Salle Belem</em>";
 
-	public static final String CALENDAR_SALLE_2_ACTIVITY_1 = "Big Data & HTML5<br/><em>Salle Graslin</em>";
-	public static final String CALENDAR_SALLE_2_ACTIVITY_2 = "GWT Offline & HTML5<br/><em>Salle Titan</em>";
+	public static final String CALENDAR_SALLE_2_ACTIVITY_1 = "Big Data & HTML5<br/><em>Salle Titan</em>";
+	public static final String CALENDAR_SALLE_2_ACTIVITY_2 = "GWT Offline & HTML5<br/><em>Salle Graslin</em>";
 	public static final String CALENDAR_SALLE_2_ACTIVITY_3 = "Angular JS<br/><em>Salle Titan</em>";
 	public static final String CALENDAR_SALLE_2_ACTIVITY_4 = "HTML5 Offline<br/><em>Salle Belem</em>";
 	public static final String CALENDAR_SALLE_2_ACTIVITY_5 = "Dart<br/><em>Salle Graslin</em>";

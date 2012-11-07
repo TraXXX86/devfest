@@ -133,7 +133,7 @@ public class SessionViewGwtImpl implements SessionView {
 
 		panel.add(this.createSessionDesc("Big Data & HTML5",//
 				"par Ido Green",//
-				"Salle Graslin (hangout) de 10h10 à 11h10",//
+				"Salle Titan (hangout) de 11h20 à 12h20",//
 				ConstantsUtil.SESSION_WEB2,//
 				"en",//
 				"202"));
@@ -156,7 +156,7 @@ public class SessionViewGwtImpl implements SessionView {
 		panel.add(this.createSessionDesc(
 				"Développer une application Web Offline avec GWT et HTML5 ",//
 				"par Sami Jaber",//
-				"Salle Titan de 11h20 à 12h20",//
+				"Salle Graslin de 10h10 à 11h10",//
 				ConstantsUtil.SESSION_WEB5,//
 				"fr",//
 				"202"));
